@@ -1,8 +1,22 @@
-.game-layout {
-  padding: 2rem;
-  color: white;
+/* 
+  Новая обертка для фона во всю ширину и правильных отступов.
+  min-height: 100vh заставляет фон занимать весь экран по высоте.
+*/
+.game-page-container {
   background-color: #1a1a2e;
-  min-height: 70vh;
+  padding: 5rem 2rem 3rem; /* 5rem сверху для шапки, остальное для контента */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 
+  Теперь это просто внутренний контейнер для центрирования контента.
+  Фон и отступы убраны.
+*/
+.game-layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
 }
 
 .tabs {
@@ -35,4 +49,25 @@
 .tabs button.active::after {
   content: '';
   position: absolute;
-  bottom
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #FFD700;
+}
+
+.tab-content {
+  padding-top: 1rem;
+  animation: fadeInContent 0.5s ease-in-out;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

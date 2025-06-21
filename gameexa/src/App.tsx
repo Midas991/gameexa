@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -26,7 +27,6 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apexzone" element={<ApexZone />} />
@@ -37,7 +37,6 @@ function App() {
         <Route path="/pubgzone" element={<PUBGZone />} />
         <Route path="/rlzone" element={<RLZone />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );

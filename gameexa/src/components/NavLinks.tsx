@@ -3,7 +3,7 @@ import './Header.css';
 
 export default function NavLinks({ onClick }: { onClick?: () => void }) {
   const zones = [
-    { path: '/apexzone', label: 'Apex' },
+    { path: '/apexzone', label: 'Apex Legends' },
     { path: '/cs2zone', label: 'CS2' },
     { path: '/fortzone', label: 'Fortnite' },
     { path: '/gta5zone', label: 'GTA V' },

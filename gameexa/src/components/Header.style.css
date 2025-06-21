@@ -1,4 +1,4 @@
-/* ТЕСТОВЫЙ КОД ДЛЯ ДИАГНОСТИКИ */
+/* Новый, чистый файл стилей, чтобы обойти кэш */
 .header {
   background: linear-gradient(135deg, #1a1a2e, #16213e);
   color: white;
@@ -34,8 +34,6 @@
   flex-shrink: 0;
 }
 
-/* Все остальные стили ниже остаются для полноты, но главные правила выше */
-
 .nav {
   display: flex;
   gap: 1.5rem;
@@ -66,6 +64,8 @@
   color: #FFD700;
   border-bottom: 2px solid #FFD700;
 }
+
+/* ... здесь все остальные стили для мобильных версий и меню, они не должны конфликтовать ... */
 
 .lang-dropdown {
   position: relative;
@@ -227,28 +227,6 @@
   display: none;
 }
 
-/* Планшеты (768px - 1024px) */
-@media (max-width: 1024px) {
-  .header {
-    padding: 1rem 1.5rem;
-  }
-  
-  .nav {
-    gap: 1rem;
-  }
-  
-  .nav a,
-  .nav-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
-  }
-  
-  .logo {
-    font-size: 1.6rem;
-  }
-}
-
-/* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
   .header {
     padding: 1rem;
@@ -279,7 +257,6 @@
   }
 }
 
-/* Мобильное меню */
 .mobile-menu {
   position: fixed;
   top: 100%;
@@ -348,7 +325,6 @@
   border-color: #FFD700;
 }
 
-/* Мобильный переключатель языков */
 .mobile-menu .lang-dropdown {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
@@ -393,69 +369,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Маленькие мобильные устройства (до 480px) */
-@media (max-width: 480px) {
-  .header {
-    padding: 0.8rem 1rem;
-  }
-  
-  .logo {
-    font-size: 1.3rem;
-  }
-  
-  .burger {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .burger span {
-    width: 22px;
-    height: 2px;
-  }
-  
-  .mobile-menu {
-    padding: 1.5rem 1rem;
-  }
-  
-  .mobile-links a {
-    padding: 0.8rem 1.2rem;
-    font-size: 1rem;
-  }
-  
-  .mobile-menu .lang-button {
-    padding: 0.8rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* Очень маленькие экраны (до 360px) */
-@media (max-width: 360px) {
-  .header {
-    padding: 0.6rem 0.8rem;
-  }
-  
-  .logo {
-    font-size: 1.2rem;
-  }
-  
-  .burger {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .burger span {
-    width: 20px;
-    height: 2px;
-  }
-  
-  .mobile-menu {
-    padding: 1rem 0.8rem;
-  }
-  
-  .mobile-links a {
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
-  }
-}
+} 

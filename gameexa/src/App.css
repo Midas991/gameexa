@@ -1,9 +1,8 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* 
+  Этот файл больше не контролирует основной макет.
+  Все стили для #root и .main-content убраны.
+  Остались только стили по умолчанию от Vite.
+*/
 
 .logo {
   height: 6em;

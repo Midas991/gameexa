@@ -26,26 +26,28 @@ export default function GamePageLayout({ title }: Props) {
   };
 
   return (
-    <div className="game-layout">
-      <h1>{title}</h1>
+    <div className="game-page-container">
+      <div className="game-layout">
+        <h1>{title}</h1>
 
-      <nav className="tabs">
-        <button className={activeTab === 'overview' ? 'active' : ''} onClick={() => setActiveTab('overview')}>
-          {t('tabs.overview')}
-        </button>
-        <button className={activeTab === 'guides' ? 'active' : ''} onClick={() => setActiveTab('guides')}>
-          {t('tabs.guides')}
-        </button>
-        <button className={activeTab === 'custom' ? 'active' : ''} onClick={() => setActiveTab('custom')}>
-          {t('tabs.custom')}
-        </button>
-        <button className={activeTab === 'community' ? 'active' : ''} onClick={() => setActiveTab('community')}>
-          {t('tabs.community')}
-        </button>
-      </nav>
+        <nav className="tabs">
+          <button className={activeTab === 'overview' ? 'active' : ''} onClick={() => setActiveTab('overview')}>
+            {t('tabs.overview')}
+          </button>
+          <button className={activeTab === 'guides' ? 'active' : ''} onClick={() => setActiveTab('guides')}>
+            {t('tabs.guides')}
+          </button>
+          <button className={activeTab === 'custom' ? 'active' : ''} onClick={() => setActiveTab('custom')}>
+            {t('tabs.custom')}
+          </button>
+          <button className={activeTab === 'community' ? 'active' : ''} onClick={() => setActiveTab('community')}>
+            {t('tabs.community')}
+          </button>
+        </nav>
 
-      <div key={activeTab} className="tab-content">
-        {renderTabContent()}
+        <div key={activeTab} className="tab-content">
+          {renderTabContent()}
+        </div>
       </div>
     </div>
   );

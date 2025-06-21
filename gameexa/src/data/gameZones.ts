@@ -5,8 +5,8 @@ export const gameZones = [
     path: '/apexzone',
   },
   {
-    title: 'Counter-Strike 2 (CS2)',
-    image: '/assets/cs2.jpg',
+    title: 'Counter-Strike 2',
+    image: '/assets/counter_strike_2.jpg',
     path: '/cs2zone',
   },
   {
