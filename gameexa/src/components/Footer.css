@@ -1,0 +1,13 @@
+import './Footer.css';
+import { useTranslation } from 'react-i18next';
+
+export default function Footer() {
+  const { t } = useTranslation();
+
+  return (
+    <footer className="footer">
+      <p>© {new Date().getFullYear()} Gameexa. {t('footer.rights')}</p>
+      <p>{t('footer.made')}</p>
+    </footer>
+  );
+}

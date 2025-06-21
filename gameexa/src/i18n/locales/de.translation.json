@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "description": "Dein Zugang zu Spielzonen, Guides und Community.",
+    "explore": "Entdecken"
+  },
+  "discord": {
+    "title": "🎮 Tritt unserer Discord-Community bei",
+    "description": "Finde Guides, vernetze dich mit Spielern und level gemeinsam auf.",
+    "button": "Discord beitreten"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "made": "Mit ❤️ für die Gaming-Community gemacht."
+  },
+  "tabs": {
+    "overview": "Übersicht",
+    "guides": "Guides",
+    "custom": "Anpassung",
+    "community": "Community",
+    "overviewText": "Spielübersicht, Mechaniken, Trailer...",
+    "guidesText": "Anleitungen für Anfänger & Profis, Tipps & Tricks...",
+    "customText": "Skins, Loadouts, Fortschrittssysteme...",
+    "communityText": "Discord, Clans, Events, Fan Art..."
+  }
+}

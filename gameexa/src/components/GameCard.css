@@ -1,0 +1,72 @@
+/* Уже существующий стиль карточки */
+.game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #2B2E4A;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: scale(1.03);
+}
+
+.game-card img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+}
+
+.game-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.soon {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #FFD700;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  position: relative;
+}
+
+/* ✨ Добавляем shimmer только на disabled */
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.08), transparent);
+  animation: shimmer 2.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
