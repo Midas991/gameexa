@@ -7,28 +7,87 @@
   padding: 1rem 2rem;
   position: relative;
   z-index: 10;
+  gap: 1rem;
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: 'Orbitron', sans-serif;
   color: #FFD700;
   text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .nav a,
-.lang-switcher button {
-  margin-left: 1rem;
+.nav-link {
   color: white;
-  background: none;
-  border: none;
   font-weight: 500;
-  cursor: pointer;
   text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
 }
 
 .nav a:hover,
-.lang-switcher button:hover {
+.nav-link:hover {
+  color: #FFD700;
+}
+
+.nav a.active,
+.nav-link.active {
+  color: #FFD700;
+  border-bottom: 2px solid #FFD700;
+}
+
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+}
+
+.lang-button:hover {
+  color: #FFD700;
+}
+
+.lang-list {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #1a1a2e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.3rem 0;
+  display: none;
+  flex-direction: column;
+  min-width: 80px;
+  z-index: 20;
+}
+
+.lang-list.open {
+  display: flex;
+}
+
+.lang-list li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.lang-list li:hover {
+  background-color: #333;
   color: #FFD700;
 }
 
@@ -38,6 +97,7 @@
   border: none;
   color: white;
   display: none;
+  cursor: pointer;
 }
 
 .desktop-only {
@@ -57,16 +117,21 @@
     display: block;
   }
 
+  .burger {
+    display: block;
+  }
+
   .mobile-menu {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background: #1A1A2E;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: none;
     flex-direction: column;
     animation: slide-down 0.3s ease-in-out;
+    z-index: 15;
   }
 
   .mobile-menu.open {
@@ -75,8 +140,14 @@
 
   .mobile-links a {
     margin: 0.5rem 0;
+    font-size: 1.1rem;
     color: white;
     text-decoration: none;
+    cursor: pointer;
+  }
+
+  .mobile-links a:hover {
+    color: #FFD700;
   }
 }
 

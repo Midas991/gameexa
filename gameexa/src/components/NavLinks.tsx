@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 export default function NavLinks({ onClick }: { onClick?: () => void }) {
   const zones = [
@@ -14,7 +15,7 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
   return (
     <>
       {zones.map(({ path, label }) => (
-        <Link key={path} to={path} onClick={onClick}>
+        <Link key={path} to={path} onClick={onClick} className="nav-link">
           {label}
         </Link>
       ))}
