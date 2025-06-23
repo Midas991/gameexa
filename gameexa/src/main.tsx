@@ -6,6 +6,9 @@ import 'aos/dist/aos.css'; // ✅ Подключаем стили AOS
 
 import App from './App.tsx';
 
+// Проверяем, что i18n загрузился
+console.log('Main.tsx: i18n loaded');
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />

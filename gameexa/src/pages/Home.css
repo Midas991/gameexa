@@ -5,11 +5,10 @@
   padding-top: 5rem;
 }
 
-/* 🎬 Hero Section */
+/* === Video Background Hero Section === */
 .hero {
   position: relative;
   height: calc(100vh - 5rem);
-  background: url('/public/background-hero.gif') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,13 +16,25 @@
   overflow: hidden;
   padding: 2rem 1rem;
   margin-top: -5rem;
+  background: none;
 }
 
-.hero::before {
-  content: '';
+.hero-bg-video {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
   z-index: 1;
 }
 
@@ -74,7 +85,7 @@
   transform: translateY(-2px);
 }
 
-/* 🎮 Cards Section */
+/* === Game Cards Section === */
 .zones {
   display: grid;
   gap: 2rem;
@@ -100,7 +111,7 @@
   }
 }
 
-/* 🎮 Discord Section */
+/* === Discord Section (оставьте как было, если используется) === */
 .discord-section {
   position: relative;
   background: linear-gradient(135deg, #5865F2, #7289DA, #5865F2);
@@ -288,65 +299,63 @@
 
 /* Responsive Discord Section */
 @media (max-width: 768px) {
+  .zones {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+  }
   .discord-section {
     padding: 3rem 1.5rem;
   }
-  
   .discord-section h2 {
     font-size: 2rem;
   }
-  
   .discord-section p {
     font-size: 1.1rem;
   }
-  
   .discord-button {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
-  
   .discord-stats {
     gap: 2rem;
   }
-  
   .discord-stat {
     padding: 0.8rem;
   }
-  
   .discord-stat-number {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
+  .zones {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
   .discord-section {
     padding: 2rem 1rem;
   }
-  
   .discord-section h2 {
     font-size: 1.8rem;
   }
-  
   .discord-section p {
     font-size: 1rem;
   }
-  
   .discord-button {
     padding: 0.7rem 1.2rem;
     font-size: 0.9rem;
     flex-direction: column;
     gap: 0.5rem;
   }
-  
   .discord-stats {
     gap: 1rem;
     flex-direction: column;
   }
-  
   .discord-stat {
     padding: 0.6rem;
   }
-  
   .discord-stat-number {
     font-size: 1.3rem;
   }

@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 h1 {
@@ -60,4 +60,42 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 0 0 8px #fff, 0 0 16px #a259e6;
+  transition: opacity 0.5s, transform 2s;
+  will-change: transform, opacity;
+}
+
+/* === СТИЛЬНЫЙ СКРОЛЛБАР ДЛЯ ВСЕЙ СТРАНИЦЫ === */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #181f2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #ffe066 0%, #3a8dde 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ffe06688;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(120deg, #ffe066 0%, #a259e6 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: #181f2a;
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffe066 #181f2a;
 }

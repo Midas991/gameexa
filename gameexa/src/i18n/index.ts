@@ -13,11 +13,19 @@ i18n
       ua: { translation: ua },
       de: { translation: de },
     },
+    lng: 'en',
     fallbackLng: 'en',
     supportedLngs: ['en', 'ua', 'de'],
+    debug: true,
     interpolation: {
       escapeValue: false,
     },
+    react: {
+      useSuspense: false,
+    },
   });
+
+console.log('i18n initialized with languages:', i18n.languages);
+console.log('Current language:', i18n.language);
 
 export default i18n;
