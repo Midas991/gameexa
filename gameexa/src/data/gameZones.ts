@@ -2,37 +2,37 @@ export const gameZones = [
   {
     title: 'Apex Legends',
     image: '/assets/apex.jpg',
-    path: '/apexzone',
+    path: '/apex',
   },
   {
     title: 'Counter-Strike 2',
     image: '/assets/counter_strike_2.jpg',
-    path: '/cs2zone',
+    path: '/cs2',
   },
   {
     title: 'Fortnite',
     image: '/assets/fortnite.jpg',
-    path: '/fortzone',
+    path: '/fortnite',
   },
   {
     title: 'GTA V',
     image: '/assets/gta5.jpg',
-    path: '/gta5zone',
+    path: '/gta5',
   },
   {
     title: 'Overwatch',
     image: '/assets/overwatch.png',
-    path: '/overzone',
+    path: '/overwatch',
   },
   {
     title: 'PUBG',
     image: '/assets/pubg.jpg',
-    path: '/pubgzone',
+    path: '/pubg',
   },
   {
     title: 'Rocket League',
     image: '/assets/rocketleague.jpg',
-    path: '/rlzone',
+    path: '/rocketleague',
   },
   {
     title: 'Coming Soon',

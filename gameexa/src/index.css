@@ -22,7 +22,7 @@
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 h1 {
@@ -76,8 +76,10 @@ button:focus-visible {
 
 /* === СТИЛЬНЫЙ СКРОЛЛБАР ДЛЯ ВСЕЙ СТРАНИЦЫ === */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
+  height: 10px;
   background: #181f2a;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -98,4 +100,12 @@ button:focus-visible {
 * {
   scrollbar-width: thin;
   scrollbar-color: #ffe066 #181f2a;
+}
+
+header {
+  border-bottom: none !important;
+}
+
+.hero {
+  margin-top: 0 !important;
 }

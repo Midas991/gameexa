@@ -12,5 +12,5 @@ console.log('Main.tsx: i18n loaded');
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );

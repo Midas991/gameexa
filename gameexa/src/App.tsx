@@ -5,6 +5,8 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import TestButton from './components/TestButton';
+import ApexButton from './components/ApexButton';
 
 import Home from './pages/Home';
 import ApexZone from './pages/ApexZone';
@@ -16,6 +18,9 @@ import PUBGZone from './pages/PUBGZone';
 import RLZone from './pages/RLZone';
 
 function App() {
+  console.log('App rendering', new Date().toISOString());
+  console.log('Location:', window.location.href);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -27,15 +32,17 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <TestButton />
+      <ApexButton />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/apexzone" element={<ApexZone />} />
-        <Route path="/cs2zone" element={<CS2Zone />} />
-        <Route path="/fortzone" element={<FortZone />} />
-        <Route path="/gta5zone" element={<GTA5Zone />} />
-        <Route path="/overzone" element={<OverZone />} />
-        <Route path="/pubgzone" element={<PUBGZone />} />
-        <Route path="/rlzone" element={<RLZone />} />
+        <Route path="/apex" element={<ApexZone />} />
+        <Route path="/cs2" element={<CS2Zone />} />
+        <Route path="/fortnite" element={<FortZone />} />
+        <Route path="/gta5" element={<GTA5Zone />} />
+        <Route path="/overwatch" element={<OverZone />} />
+        <Route path="/pubg" element={<PUBGZone />} />
+        <Route path="/rocketleague" element={<RLZone />} />
       </Routes>
       <Footer />
     </BrowserRouter>

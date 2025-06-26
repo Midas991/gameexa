@@ -9,6 +9,7 @@ type Props = {
 };
 
 export default function GameCard({ title, image, path = '#', disabled = false }: Props) {
+  console.log('GameCard:', title, path);
   const content = (
     <div className={`game-card ${disabled ? 'disabled' : ''}`}>
       <div className="card-image">
