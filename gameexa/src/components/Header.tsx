@@ -14,8 +14,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <Link to="/" className="logo">
-          Gameexa
+        <Link to="/" className="logo-container">
+          <div className="logo-circle"></div>
+          <span className="logo-text">Gameexa</span>
         </Link>
 
         <nav className="nav desktop-only">

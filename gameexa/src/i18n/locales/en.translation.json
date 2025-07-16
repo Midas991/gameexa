@@ -1,15 +1,16 @@
 {
   "hero": {
-    "description": "Your gateway to game zones, guides, and community.",
+    "description": "Your gateway to game zones, guides, and community",
     "explore": "Explore"
   },
   "discord": {
-    "title": "🎮 Join our Discord community",
-    "description": "Explore guides, connect with players, and level up together.",
-    "button": "Join Discord"
+    "title": "Join our <1>New Game Galaxy</1> on",
+    "main": "Discord!",
+    "desc": "Explore guides, connect with players, and level up together",
+    "button": "Join"
   },
   "footer": {
-    "rights": "All rights reserved.",
+    "rights": "All rights reserved",
     "made": "Created by gamers ❤️ for gamers"
   },
   "tabs": {
@@ -21,5 +22,35 @@
     "guidesText": "Beginner & pro guides, tips & tricks...",
     "customText": "Skins, loadouts, progression systems...",
     "communityText": "Discord, clans, events, fan art..."
+  },
+  "games": {
+    "Apex Legends": {
+      "title": "Apex Legends",
+      "desc": "Battle royale hero shooter with squads and abilities"
+    },
+    "Counter-Strike 2": {
+      "title": "Counter-Strike 2",
+      "desc": "Legendary tactical shooter, teamplay and skill"
+    },
+    "Fortnite": {
+      "title": "Fortnite",
+      "desc": "Colorful battle royale with building and events"
+    },
+    "GTA V": {
+      "title": "GTA V",
+      "desc": "Open world, heists, chaos and online fun"
+    },
+    "Overwatch": {
+      "title": "Overwatch",
+      "desc": "Team-based shooter with unique heroes and abilities"
+    },
+    "PUBG": {
+      "title": "PUBG",
+      "desc": "Classic battle royale, realistic gunplay and tactics"
+    },
+    "Rocket League": {
+      "title": "Rocket League",
+      "desc": "Football with rocket-powered cars. Pure fun"
+    }
   }
 }

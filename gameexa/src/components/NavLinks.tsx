@@ -1,11 +1,8 @@
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 export default function NavLinks({ onClick }: { onClick?: () => void }) {
   const location = useLocation();
-  const navigate = useNavigate();
-  
-  console.log('NavLinks rendering, current location:', location.pathname);
 
   const zones = [
     { path: '/apex', label: 'Apex Legends' },
@@ -17,31 +14,13 @@ export default function NavLinks({ onClick }: { onClick?: () => void }) {
     { path: '/rocketleague', label: 'Rocket League' },
   ];
 
-  const handleClick = (path: string) => {
-    console.log('NavLink clicked:', path);
-    if (onClick) {
-      onClick();
-    }
-    if (path === '/apex') {
-      console.log('Direct navigation to Apex Legends');
-      navigate(path);
-    }
-  };
-
   return (
     <>
-      <Link
-        to="/"
-        onClick={() => handleClick('/')}
-        className={`nav-link${location.pathname === '/' ? ' active' : ''}`}
-      >
-        Home
-      </Link>
       {zones.map(({ path, label }) => (
         <Link
           key={path}
           to={path}
-          onClick={() => handleClick(path)}
+          onClick={onClick}
           className={`nav-link${location.pathname === path ? ' active' : ''}`}
         >
           {label}

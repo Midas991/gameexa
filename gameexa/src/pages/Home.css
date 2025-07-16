@@ -1,8 +1,11 @@
 .home {
-  background-color: #1a1a2e;
+  background-color: transparent;
   color: white;
   font-family: 'Inter', sans-serif;
   padding-top: 5rem;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* === Video Background Hero Section === */
@@ -10,6 +13,7 @@
   position: relative;
   height: calc(100vh - 5rem);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -19,22 +23,22 @@
 }
 
 .hero-bg-video {
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: 0;
+  z-index: -2;
   pointer-events: none;
 }
 
 .hero-overlay {
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.5);
-  z-index: 1;
+  z-index: -1;
   padding-top: 0;
 }
 
@@ -58,32 +62,80 @@
 }
 
 .hero-content h1 {
-  font-size: 3.2rem;
+  font-size: 6vw;
   font-family: 'Orbitron', sans-serif;
   margin: 0 0 1rem;
+  color: #fff;
+  text-shadow: 0 0 48px #fff, 0 0 32px #00cfff, 0 0 12px #fff;
+  animation: title-fadein 1.5s cubic-bezier(.4,.2,.6,1);
+}
+
+@keyframes title-fadein {
+  from { opacity: 0; transform: translateY(60px);}
+  to { opacity: 1; transform: none;}
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 2vw;
   margin-bottom: 1.5rem;
+  text-shadow: 0 0 12px #00cfff;
+  animation: subtitle-fadein 1.8s cubic-bezier(.4,.2,.6,1);
+}
+
+@keyframes subtitle-fadein {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: none;}
 }
 
 .scroll-button {
-  background-color: #FFD700;
-  color: #000;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
+  /* Новый фон с градиентом, как у кнопки Join */
+  background: linear-gradient(90deg, #6ec3f7 0%, #00e6cb 50%, #3a8dde 100%);
+  background-size: 200% 100%; /* Увеличиваем размер фона для анимации перелива */
+  /* Новые анимации: свечение кнопки и перелив градиента */
+  animation: btn-glow 2s infinite alternate, gradient-shift 8s infinite linear;
+
+  color: #0A0A2A; /* Цвет текста остается темным для контраста */
+  border: none;
+  border-radius: 32px; /* Скругление углов, как у кнопки Join */
+  padding: 14px 48px; /* Отступы, как у кнопки Join */
+  font-size: 1.3rem; /* Размер шрифта, как у кнопки Join */
   font-weight: bold;
-  font-size: 1rem;
-  box-shadow: 0 2px 12px rgba(255, 215, 0, 0.4);
-  transition: all 0.3s ease;
+  /* text-transform: uppercase; -- Удаляем, если не нужно верхнего регистра */
+  cursor: pointer;
+  
+  /* Обновленный transition, убрал background, так как он анимируется */
+  transition: box-shadow 0.3s, transform 0.2s;
+
+  /* Свечение кнопки, как у кнопки Join, в голубо-синих тонах */
+  box-shadow: 0 0 48px #6ec3f788, 0 0 24px #3a8dde66;
+  
+  text-decoration: none;
+  display: inline-block;
+  
+  position: relative; /* Необходимо для overflow и background-size */
+  overflow: hidden; /* Обрезает содержимое, выходящее за границы, нужно для анимации фона */
+  
+  letter-spacing: 1px; /* Межбуквенное расстояние, как у кнопки Join */
+  /* Тень текста, как у кнопки Join */
+  text-shadow: 0 0 8px #fff, 0 0 16px #3a8dde;
 }
 
 .scroll-button:hover {
-  background-color: #e6c200;
-  transform: translateY(-2px);
+  /* Свечение при наведении, как у кнопки Join */
+  box-shadow: 0 0 64px #6ec3f7cc, 0 0 48px #3a8ddebb;
+  transform: scale(1.05);
 }
+
+/* Удалены стили :active и :focus, если они не нужны для новой стилистики. */
+/* Если они были важны, то их нужно будет переопределить с учетом новых цветов */
+/* .scroll-button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 140, 0, 0.4);
+} */
+/* .scroll-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5);
+} */
 
 /* === Game Cards Section === */
 .zones {
@@ -93,9 +145,20 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(10, 10, 42, 0.85);
 }
 
 @media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 9vw;
+  }
+  
+  .hero-content p {
+    font-size: 3vw;
+  }
+  
   .zones {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -104,6 +167,14 @@
 }
 
 @media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 12vw;
+  }
+  
+  .hero-content p {
+    font-size: 4vw;
+  }
+  
   .zones {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -359,4 +430,16 @@
   .discord-stat-number {
     font-size: 1.3rem;
   }
+}
+
+/* Новые анимации для кнопки EXPLORE (скопированы из DiscordBanner.css) */
+@keyframes btn-glow {
+  from { box-shadow: 0 0 48px #6ec3f7aa, 0 0 24px #3a8dde66; }
+  to { box-shadow: 0 0 80px #6ec3f7ee, 0 0 48px #3a8ddebb; transform: scale(1.04); }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

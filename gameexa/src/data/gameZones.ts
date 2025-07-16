@@ -34,9 +34,4 @@ export const gameZones = [
     image: '/assets/rocketleague.jpg',
     path: '/rocketleague',
   },
-  {
-    title: 'Coming Soon',
-    image: '/assets/comingsoon.png',
-    disabled: true,
-  },
 ];

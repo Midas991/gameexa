@@ -5,8 +5,7 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import TestButton from './components/TestButton';
-import ApexButton from './components/ApexButton';
+import StarryBackground from './components/StarryBackground';
 
 import Home from './pages/Home';
 import ApexZone from './pages/ApexZone';
@@ -18,9 +17,6 @@ import PUBGZone from './pages/PUBGZone';
 import RLZone from './pages/RLZone';
 
 function App() {
-  console.log('App rendering', new Date().toISOString());
-  console.log('Location:', window.location.href);
-
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -31,9 +27,8 @@ function App() {
 
   return (
     <BrowserRouter>
+      <StarryBackground />
       <Header />
-      <TestButton />
-      <ApexButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apex" element={<ApexZone />} />
