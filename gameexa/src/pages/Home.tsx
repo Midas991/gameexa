@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import DiscordBanner from '../components/DiscordBanner';
+import DevelopmentPlansBanner from '../components/DevelopmentPlansBanner';
+import SupportBanner from '../components/SupportBanner';
 import GameCarousel from '../components/GameCarousel';
 
 export default function Home() {
@@ -48,8 +50,20 @@ export default function Home() {
       {/* Game Carousel */}
       <GameCarousel />
       
-      {/* Discord Banner */}
-      <DiscordBanner />
+      {/* Banners Section */}
+      <section className="banners-section">
+        <div className="banners-container">
+          <div className="banner-desktop-left">
+            <DevelopmentPlansBanner />
+          </div>
+          <div className="banner-center">
+            <DiscordBanner />
+          </div>
+          <div className="banner-desktop-right">
+            <SupportBanner />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

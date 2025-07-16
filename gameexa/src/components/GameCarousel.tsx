@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { gameZones } from '../data/gameZones';
@@ -7,23 +7,31 @@ import './GameCarousel.css';
 export default function GameCarousel() {
   const { t } = useTranslation();
   const carouselRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const intervalRef = useRef<number | null>(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
 
     const moveNext = () => {
+      if (isTransitioning) return;
+      
       const cards = carousel.children;
       if (!cards || cards.length === 0) return;
+      
+      setIsTransitioning(true);
       const cardWidth = cards[0].clientWidth + 32; // 32px gap
       carousel.style.transition = 'transform 0.6s cubic-bezier(.4,.2,.6,1)';
       carousel.style.transform = `translateX(-${cardWidth}px)`;
 
       setTimeout(() => {
-        carousel.appendChild(carousel.firstElementChild!);
+        if (carousel.firstElementChild) {
+          carousel.appendChild(carousel.firstElementChild);
+        }
         carousel.style.transition = 'none';
         carousel.style.transform = 'translateX(0)';
+        setIsTransitioning(false);
       }, 600);
     };
 
@@ -44,7 +52,12 @@ export default function GameCarousel() {
     return () => {
       stopCarousel();
     };
-  }, []);
+  }, [isTransitioning]);
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    target.style.display = 'none';
+  };
 
   return (
     <div className="games-section" id="games">
@@ -54,7 +67,7 @@ export default function GameCarousel() {
             <div className="game-card" key={game.title + '-' + idx}>
               {game.path ? (
                 <Link to={game.path || '#'} className="card-link">
-                  <img src={game.image} alt={t(`games.${game.title}.title`)} />
+                  <img src={game.image} alt={t(`games.${game.title}.title`)} onError={handleImageError} />
                   <div className="game-info">
                     <h3>{t(`games.${game.title}.title`)}</h3>
                     <p>{t(`games.${game.title}.desc`)}</p>
@@ -62,7 +75,7 @@ export default function GameCarousel() {
                 </Link>
               ) : (
                 <>
-                  <img src={game.image} alt={t(`games.${game.title}.title`)} />
+                  <img src={game.image} alt={t(`games.${game.title}.title`)} onError={handleImageError} />
                   <div className="game-info">
                     <h3>{t(`games.${game.title}.title`)}</h3>
                     <div className="coming-soon-badge">Coming Soon</div>

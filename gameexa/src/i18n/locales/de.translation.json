@@ -1,15 +1,26 @@
 {
   "hero": {
-    "description": "Dein Tor zu Spielzonen, Guides und Community.",
-    "explore": "Erkunden"
+    "description": "Dein Tor zu Spielzonen, Guides und Community",
+    "explore": "Entdecken"
   },
   "discord": {
-    "title": "🎮 Tritt unserer Discord-Community bei",
-    "description": "Entdecke Guides, vernetze dich mit Spielern und steige gemeinsam auf.",
-    "button": "Discord beitreten"
+    "title": "Tritt unserer <1>Neuen Spiele-Galaxie</1> auf",
+    "main": "Discord bei!",
+    "desc": "Entdecke Guides, vernetze dich mit Spielern und levelt gemeinsam auf",
+    "button": "Beitreten"
+  },
+  "developmentBanner": {
+    "title": "Blick in die Zukunft",
+    "desc": "Entdecke unsere Entwicklungspläne. Dein Feedback ist wichtig!",
+    "button": "Mehr erfahren"
+  },
+  "support": {
+    "title": "Unterstütze Gameexa!",
+    "desc": "Gefällt dir Gameexa? Hilf uns zu wachsen und noch besser zu werden!",
+    "button": "Projekt unterstützen"
   },
   "footer": {
-    "rights": "Alle Rechte vorbehalten.",
+    "rights": "Alle Rechte vorbehalten",
     "made": "Erstellt von Gamern ❤️ für Gamer"
   },
   "tabs": {
@@ -18,8 +29,140 @@
     "custom": "Anpassung",
     "community": "Community",
     "overviewText": "Spielübersicht, Mechaniken, Trailer...",
-    "guidesText": "Anfänger- & Pro-Guides, Tipps & Tricks...",
+    "guidesText": "Guides für Anfänger & Profis, Tipps & Tricks...",
     "customText": "Skins, Loadouts, Fortschrittssysteme...",
     "communityText": "Discord, Clans, Events, Fan-Art..."
+  },
+  "games": {
+    "Apex Legends": {
+      "title": "Apex Legends",
+      "desc": "Battle Royale Hero-Shooter mit Teams und Fähigkeiten"
+    },
+    "Counter-Strike 2": {
+      "title": "Counter-Strike 2",
+      "desc": "Legendärer Taktik-Shooter mit Teamplay und Skill"
+    },
+    "Fortnite": {
+      "title": "Fortnite",
+      "desc": "Buntes Battle Royale mit Bauen und Events"
+    },
+    "GTA V": {
+      "title": "GTA V",
+      "desc": "Offene Welt, Raubüberfälle, Chaos und Online-Spaß"
+    },
+    "Overwatch": {
+      "title": "Overwatch",
+      "desc": "Team-Shooter mit einzigartigen Helden und Fähigkeiten"
+    },
+    "PUBG": {
+      "title": "PUBG",
+      "desc": "Klassisches Battle Royale mit realistischer Action und Taktik"
+    },
+    "Rocket League": {
+      "title": "Rocket League",
+      "desc": "Fußball mit Raketenautos. Einfacher Spaß"
+    }
+  },
+  "development": {
+    "page": {
+      "title": "Gameexa Entwicklungspläne",
+      "subtitle": "Roadmap: Unsere Zukunftsvision",
+      "toc": {
+        "title": "Inhalt",
+        "show": "Anzeigen",
+        "hide": "Verstecken"
+      },
+      "sections": {
+        "introduction": "Einleitung",
+        "completed": "Was bereits getan ist",
+        "inProgress": "Was derzeit in Arbeit ist",
+        "future": "Zukunftspläne",
+        "contribute": "Wie Sie beitragen können",
+        "faq": "Häufig gestellte Fragen"
+      },
+      "introduction": {
+        "text1": "Willkommen zur Gameexa Entwicklungs-Roadmap! Wir sind bestrebt, Gameexa zur ultimativen Gaming-Plattform für Spieler weltweit zu machen.",
+        "text2": "Diese Seite bietet transparente Informationen über unseren Fortschritt, aktuelle Arbeit und zukünftige Pläne. Ihr Feedback und Ihre Vorschläge sind für uns von unschätzbarem Wert.",
+        "highlight": "Wir streben danach, Gameexa zur besten Plattform für Gamer zu machen und arbeiten kontinuierlich an ihrer Verbesserung. Hier finden Sie Informationen über unsere Erfolge, aktuellen Aufgaben und was wir für Sie in der Zukunft vorbereiten."
+      },
+      "completed": {
+        "features": "Implementierte Funktionen",
+        "feature1": "Benutzerregistrierung und Profilsystem hinzugefügt",
+        "feature2": "Spielsuche nach Genres implementiert",
+        "feature3": "Responsive Design für alle Geräte erstellt",
+        "fixes": "Fehlerbehebungen",
+        "fix1": "Falsche Spielerstatistik-Anzeige behoben",
+        "fix2": "Anwendungsabsturz bei bestimmten Aktionen behoben",
+        "fix3": "Seitenladeleistung verbessert",
+        "projects": "Abgeschlossene Projekte",
+        "project1": {
+          "title": "Hauptseite Redesign",
+          "desc": "Komplette Überarbeitung der Hauptseite mit kosmischem Theme und verbessertem Benutzererlebnis"
+        },
+        "project2": {
+          "title": "Discord Integration",
+          "desc": "Nahtlose Integration mit Discord-Server für Community-Aufbau"
+        }
+      },
+      "inProgress": {
+        "tasks": "Aktuelle Aufgaben und ihr Status",
+        "task1": {
+          "title": "In-Game Achievement System",
+          "desc": "Entwicklung eines umfassenden Achievement-Systems zur Verfolgung des Spielerfortschritts"
+        },
+        "task2": {
+          "title": "Seitenladeoptimierung",
+          "desc": "Verbesserung der Website-Performance und Ladegeschwindigkeiten"
+        },
+        "task3": {
+          "title": "Neue Analytics-Integration",
+          "desc": "Integration fortschrittlicher Analytics-Tools für bessere Benutzererfahrung"
+        },
+        "status": {
+          "inDevelopment": "In Entwicklung",
+          "testing": "Testen",
+          "started": "Gestartet"
+        },
+        "priorities": "Prioritätsbereiche",
+        "prioritiesText": "Derzeit ist unsere Hauptpriorität die Verbesserung der Website-Performance und die Erweiterung sozialer Interaktionsfunktionen."
+      },
+      "future": {
+        "newFeatures": "Neue Funktionen",
+        "feature1": "Personalisierte Spielempfehlungen",
+        "feature2": "Clan/Team-System",
+        "feature3": "Streamer-Bereich",
+        "improvements": "Verbesserungen bestehender Systeme",
+        "improvement1": "Benachrichtigungssystem-Redesign",
+        "improvement2": "Erweiterte Benutzerprofil-Funktionen",
+        "improvement3": "Fortgeschrittene Suchalgorithmen",
+        "newGames": "Neue Spiele/Module",
+        "game1": "Unterstützung für neue beliebte Spiele",
+        "game2": "Integration mit Spiel-Launchern",
+        "game3": "Mobile App-Entwicklung",
+        "optimization": "Optimierung und Performance",
+        "optimization1": "Weitere Server-Infrastruktur-Optimierung",
+        "optimization2": "Verbesserte Suchalgorithmen"
+      },
+      "contribute": {
+        "feedback": "Feedback/Vorschlag hinterlassen",
+        "feedbackText": "Ihre Ideen helfen uns zu verbessern! Teilen Sie Ihre Gedanken und Vorschläge für neue Funktionen.",
+        "feedbackBtn": "Feedback-Formular",
+        "discordBtn": "Auf Discord diskutieren",
+        "bugReport": "Bug melden",
+        "bugReportText": "Einen Bug gefunden? Helfen Sie uns, ihn zu beheben, indem Sie das Problem mit detaillierten Informationen melden.",
+        "bugReportBtn": "Bug melden",
+        "support": "Projekt unterstützen",
+        "supportText": "Gefällt Ihnen Gameexa? Unterstützen Sie unsere Entwicklung und helfen Sie uns zu wachsen!",
+        "supportBtn": "Gameexa unterstützen"
+      },
+      "faq": {
+        "q1": "Wann wird Funktion X hinzugefügt?",
+        "a1": "Wir arbeiten daran und werden den Fortschritt im Abschnitt 'Was derzeit in Arbeit ist' aktualisieren.",
+        "q2": "Kann ich eine Idee vorschlagen?",
+        "a2": "Ja! Verwenden Sie das Feedback-Formular oben oder diskutieren Sie auf unserem Discord-Server.",
+        "q3": "Wie oft aktualisieren Sie die Roadmap?",
+        "a3": "Wir aktualisieren diese Seite regelmäßig, wenn wir Aufgaben abschließen und neue beginnen."
+      }
+    }
   }
 }

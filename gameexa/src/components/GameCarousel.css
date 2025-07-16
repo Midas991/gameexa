@@ -89,20 +89,64 @@
 
 .game-card:hover {
   transform: scale(1.14) translateY(-14px) rotate(-2deg);
-  box-shadow: 0 20px 60px rgba(0, 207, 255, 0.8), 0 0 0 4px #FFD700, 0 0 32px rgba(255, 215, 0, 0.6);
+  /* Новый космический дизайн подсветки */
+  border: none;
+  box-shadow: 
+    0 0 12px 4px rgba(0, 207, 255, 0.3),
+    0 0 20px 8px rgba(255, 215, 0, 0.2),
+    0 0 0 1px rgba(0, 207, 255, 0.4);
   filter: brightness(1.12) saturate(1.25);
   z-index: 2;
-  border: 2px solid #FFD700;
+  position: relative;
   animation: card-glow-pulse 1.2s infinite alternate;
 }
 
+.game-card:hover::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  pointer-events: none;
+  z-index: 3;
+  background: 
+    conic-gradient(from 0deg at 20% 20%, rgba(0, 207, 255, 0.2) 0deg, transparent 60deg),
+    conic-gradient(from 180deg at 80% 80%, rgba(255, 215, 0, 0.15) 0deg, transparent 60deg),
+    radial-gradient(ellipse 30px 15px at 50% 0%, rgba(0, 207, 255, 0.1) 0%, transparent 100%);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.game-card:hover::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 2;
+  background: 
+    conic-gradient(from 90deg at 0% 50%, rgba(255, 215, 0, 0.08) 0deg, transparent 90deg),
+    conic-gradient(from 270deg at 100% 50%, rgba(0, 207, 255, 0.06) 0deg, transparent 90deg);
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
 .game-card:hover img {
-  filter: brightness(1.2) drop-shadow(0 0 16px #00cfff) drop-shadow(0 0 8px #FFD700);
+  filter: brightness(1.2) drop-shadow(0 0 6px #00cfff) drop-shadow(0 0 3px #FFD700);
 }
 
 @keyframes card-glow-pulse {
-  from { box-shadow: 0 20px 60px rgba(0, 207, 255, 0.8), 0 0 0 4px #FFD700, 0 0 32px rgba(255, 215, 0, 0.6); }
-  to { box-shadow: 0 32px 80px rgba(255, 215, 0, 0.8), 0 0 0 8px #00cfff, 0 0 48px rgba(255, 215, 0, 0.8); }
+  from { 
+    box-shadow: 
+      0 0 12px 4px rgba(0, 207, 255, 0.3),
+      0 0 20px 8px rgba(255, 215, 0, 0.2),
+      0 0 0 1px rgba(0, 207, 255, 0.4);
+  }
+  to { 
+    box-shadow: 
+      0 0 16px 6px rgba(255, 215, 0, 0.3),
+      0 0 24px 10px rgba(0, 207, 255, 0.2),
+      0 0 0 1px rgba(255, 215, 0, 0.4);
+  }
 }
 
 .coming-soon-badge {

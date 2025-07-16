@@ -9,6 +9,16 @@
     "desc": "Explore guides, connect with players, and level up together",
     "button": "Join"
   },
+  "developmentBanner": {
+    "title": "Future Vision",
+    "desc": "Discover our development plans. Your feedback matters!",
+    "button": "Learn More"
+  },
+  "support": {
+    "title": "Support Gameexa!",
+    "desc": "Love Gameexa? Help us grow and become even better!",
+    "button": "Support Project"
+  },
   "footer": {
     "rights": "All rights reserved",
     "made": "Created by gamers ❤️ for gamers"
@@ -51,6 +61,108 @@
     "Rocket League": {
       "title": "Rocket League",
       "desc": "Football with rocket-powered cars. Pure fun"
+    }
+  },
+  "development": {
+    "page": {
+      "title": "Gameexa Development Plans",
+      "subtitle": "Roadmap: Our Future Vision",
+      "toc": {
+        "title": "Contents",
+        "show": "Show",
+        "hide": "Hide"
+      },
+      "sections": {
+        "introduction": "Introduction",
+        "completed": "What's Already Done",
+        "inProgress": "What's Currently in Progress",
+        "future": "Future Plans",
+        "contribute": "How You Can Contribute",
+        "faq": "Frequently Asked Questions"
+      },
+      "introduction": {
+        "text1": "Welcome to the Gameexa development roadmap! We're committed to making Gameexa the ultimate gaming platform for players worldwide.",
+        "text2": "This page provides transparent information about our progress, current work, and future plans. Your feedback and suggestions are invaluable to us.",
+        "highlight": "We strive to make Gameexa the best platform for gamers and continuously work on its improvement. Here you'll find information about our achievements, current tasks, and what we're preparing for you in the future."
+      },
+      "completed": {
+        "features": "Implemented Features",
+        "feature1": "Added user registration and profile system",
+        "feature2": "Implemented game search by genres",
+        "feature3": "Created responsive design for all devices",
+        "fixes": "Bug Fixes",
+        "fix1": "Fixed incorrect player statistics display",
+        "fix2": "Resolved application crash on certain actions",
+        "fix3": "Improved page loading performance",
+        "projects": "Completed Projects",
+        "project1": {
+          "title": "Main Page Redesign",
+          "desc": "Complete overhaul of the main page with cosmic theme and improved user experience"
+        },
+        "project2": {
+          "title": "Discord Integration",
+          "desc": "Seamless integration with Discord server for community building"
+        }
+      },
+      "inProgress": {
+        "tasks": "Current Tasks and Their Status",
+        "task1": {
+          "title": "In-Game Achievement System",
+          "desc": "Developing a comprehensive achievement system for tracking player progress"
+        },
+        "task2": {
+          "title": "Page Loading Optimization",
+          "desc": "Improving website performance and loading speeds"
+        },
+        "task3": {
+          "title": "New Analytics Integration",
+          "desc": "Integrating advanced analytics tools for better user experience"
+        },
+        "status": {
+          "inDevelopment": "In Development",
+          "testing": "Testing",
+          "started": "Started"
+        },
+        "priorities": "Priority Areas",
+        "prioritiesText": "Currently, our main priority is improving website performance and expanding social interaction features."
+      },
+      "future": {
+        "newFeatures": "New Features",
+        "feature1": "Personalized game recommendations",
+        "feature2": "Clan/team system",
+        "feature3": "Streamer section",
+        "improvements": "Existing System Improvements",
+        "improvement1": "Notification system redesign",
+        "improvement2": "Enhanced user profile capabilities",
+        "improvement3": "Advanced search algorithms",
+        "newGames": "New Games/Modules",
+        "game1": "Support for new popular games",
+        "game2": "Integration with game launchers",
+        "game3": "Mobile app development",
+        "optimization": "Optimization and Performance",
+        "optimization1": "Further server infrastructure optimization",
+        "optimization2": "Improved search algorithms"
+      },
+      "contribute": {
+        "feedback": "Leave Feedback/Suggestion",
+        "feedbackText": "Your ideas help us improve! Share your thoughts and suggestions for new features.",
+        "feedbackBtn": "Feedback Form",
+        "discordBtn": "Discuss on Discord",
+        "bugReport": "Report a Bug",
+        "bugReportText": "Found a bug? Help us fix it by reporting the issue with detailed information.",
+        "bugReportBtn": "Report Bug",
+        "support": "Support the Project",
+        "supportText": "Love Gameexa? Support our development and help us grow!",
+        "supportBtn": "Support Gameexa"
+      },
+      "faq": {
+        "q1": "When will feature X be added?",
+        "a1": "We're working on it and will update the progress in the 'What's Currently in Progress' section.",
+        "q2": "Can I suggest an idea?",
+        "a2": "Yes! Use the feedback form above or discuss on our Discord server.",
+        "q3": "How often do you update the roadmap?",
+        "a3": "We update this page regularly as we complete tasks and start new ones."
+      }
     }
   }
 }

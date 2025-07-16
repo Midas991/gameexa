@@ -443,3 +443,71 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* === Banners Section === */
+.banners-section {
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(10, 10, 42, 0.3);
+}
+
+.banners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* Увеличил с 2rem до 4rem */
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Контейнеры для баннеров */
+.banner-desktop-left,
+.banner-center,
+.banner-desktop-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Адаптивность для баннеров */
+@media (max-width: 1200px) {
+  .banners-container {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .banners-section {
+    padding: 3rem 1rem;
+  }
+  
+  .banners-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* На мобильных меняем порядок */
+  .banner-desktop-left {
+    order: 2; /* Future Vision будет вторым */
+  }
+  
+  .banner-center {
+    order: 1; /* Discord будет первым */
+  }
+  
+  .banner-desktop-right {
+    order: 3; /* Support будет третьим */
+  }
+}
+
+@media (max-width: 600px) {
+  .banners-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .banners-container {
+    gap: 1.5rem;
+  }
+}

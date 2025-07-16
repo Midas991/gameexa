@@ -1,4 +1,3 @@
-import React from 'react';
 import './DiscordBanner.css';
 import { useTranslation, Trans } from 'react-i18next';
 

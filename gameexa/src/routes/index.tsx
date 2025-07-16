@@ -7,6 +7,7 @@ import GTA5Zone from '../pages/GTA5Zone';
 import OverZone from '../pages/OverZone';
 import PUBGZone from '../pages/PUBGZone';
 import RLZone from '../pages/RLZone';
+import DevelopmentPlans from '../pages/DevelopmentPlans';
 
 export default function AppRoutes() {
   return (
@@ -19,6 +20,7 @@ export default function AppRoutes() {
       <Route path="/overwatch" element={<OverZone />} />
       <Route path="/pubg" element={<PUBGZone />} />
       <Route path="/rocketleague" element={<RLZone />} />
+      <Route path="/development" element={<DevelopmentPlans />} />
     </Routes>
   );
 }
