@@ -4,6 +4,7 @@ import NavLinks from './NavLinks';
 import MobileMenu from './MobileMenu';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
+// import logo from '../public/assets/logo.svg';
 
 export default function Header() {
   const [isMobileOpen, setMobileOpen] = useState(false);
@@ -17,6 +18,7 @@ export default function Header() {
         <Link to="/" className="logo-container">
           <div className="logo-circle"></div>
           <span className="logo-text">Gameexa</span>
+          <span className="beta-badge">beta</span>
         </Link>
 
         <nav className="nav desktop-only">

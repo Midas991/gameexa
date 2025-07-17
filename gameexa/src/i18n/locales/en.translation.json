@@ -15,7 +15,7 @@
     "button": "Learn More"
   },
   "support": {
-    "title": "Support Gameexa!",
+    "title": "Support Gameexa",
     "desc": "Love Gameexa? Help us grow and become even better!",
     "button": "Support Project"
   },
@@ -61,6 +61,55 @@
     "Rocket League": {
       "title": "Rocket League",
       "desc": "Football with rocket-powered cars. Pure fun"
+    }
+  },
+  "apex": {
+    "overview": {
+      "title": "THE THRILLING FRONTIER OF BATTLE ROYALE",
+      "intro": "Apex Legends exploded onto the scene in Feb 2019, blending fast-paced Titanfall-style FPS action with hero-shooter tactics. Respawn’s free-to-play battle royale saw 1 million downloads in its first 8 hours and 50 million players in the first month. Today it boasts hundreds of millions of players (EA reports over 200 million people have played), and has generated over $3.4 billion in revenue for EA. This success isn’t just luck – the free model removes barriers, building an enormous community which in turn funds continuous updates (Battle Passes, new skins, Legends, etc.) and fuels Apex’s esports ecosystem.",
+      "why_title": "Why Apex is a Free-to-Play Success Story",
+      "why_free": "Free for All: No upfront cost means anyone can jump in, instantly swelling the player base. More players means quicker matchmaking and a more vibrant game world.",
+      "why_engagement": "Ongoing Engagement: Monetization is built on cosmetics and season passes, so Respawn has to keep the game fresh. Every few months a new Season drops with a Battle Pass and big content (new Legend, weapons, map changes). This live-service model keeps players invested long-term, and lures lapsed fans back for 'what’s new.'",
+      "why_esports": "Competitive Ecosystem: A huge player pool feeds straight into esports (the Apex Legends Global Series) and ranked play. More players mean more competition, tighter skill-based matches, and a rich talent pipeline for pro teams.",
+      "movement_title": "Mastering the Movement: Fluidity on the Battlefield",
+      "movement_intro": "One of Apex’s most lauded features is its movement system. Respawn fully embraced the importance of fluid movement, and maps are designed to encourage it. You can sprint while aiming, scale (most) walls, and slide down slopes with a single button. Ziplines and jump pads are everywhere. The result is seamless, high-speed traversal – a 'frictionless' experience that lets you focus on tactics and shooting, not clunky controls. On top of the basics, Apex supports advanced techniques for those who want extra mobility:",
+      "movement_wallbounce": "Wall-Bouncing: Run into a wall and tap jump to ricochet off it. Done right, this can give you extra height or rapidly change direction in midair.",
+      "movement_tapstrafe": "Tap-Strafing: An advanced trick (popular on PC) that lets you make extremely sharp mid-air turns by tapping your forward key with the mouse wheel. It can even allow 180° flips on the fly, making you a very slippery target.",
+      "movement_superglide": "Supergliding: Time a jump + crouch out of a wall climb to launch yourself forward at high speed. Perfect for surprising enemies or zip-lining long distances.",
+      "movement_summary": "These tricks aren’t easy, but they reward practice. The core movement remains intuitive enough for newcomers, yet the high skill ceiling gives veterans endless room to grow. In short, Apex’s movement feels fast and responsive, and its maps are purpose-built to showcase that speed.",
+      "legends_title": "Legends Assemble: Characters That Define the Fight",
+      "legends_intro": "Apex is a hero shooter battle royale. At the start of each match you pick a Legend – a character with a unique identity and kit of abilities. Unlike other BRs with generic loadouts, Apex’s Legends have rich personalities and special powers. For example, at launch players chose from eight distinct Legends, and today there are dozens more, each with three signature skills:",
+      "legends_passive": "Passive Ability: An always-on perk (or near-instant skill). E.g. Bangalore’s 'Double Time' gives a temporary sprint boost when shot, while Bloodhound’s 'Tracker' passively highlights recent enemy tracks.",
+      "legends_tactical": "Tactical Ability: A short-cooldown combat skill. E.g. Wraith’s 'Into the Void' lets her phase out for repositioning, Gibraltar’s 'Gun Shield' pops up a protective shield when aiming, and Lifeline’s 'D.O.C. Heal Drone' lets her medically heal allies.",
+      "legends_ultimate": "Ultimate Ability: A powerful skill with a long cooldown. E.g. Bangalore calls an aerial smoke strike; Bloodhound’s 'Beast of the Hunt' supercharges their senses and speed; Valkyrie rockets into the sky or Octane deploys a jump pad to fling the team forward.",
+      "legends_classes": "Importantly, Apex formalized these roles into five classes (introduced in Season 16). The classes – Assault, Recon, Support, Skirmisher, and Controller – give each Legend a broad role (offense, info-gathering, healing, mobility, or area control). This makes team composition strategic. In a 3-player squad (no duplicate Legends allowed), a good mix of roles can cover offense, defense, and utility. With clear roles, team synergy matters: complementary abilities allow combos (smoke + artillery, recon intel + flank, heal + shield, etc.). Each Legend’s unique kit and backstory also fuels player identity. The rotating roster means the meta is always shifting. In short, Legends are central to Apex’s appeal – they’re more than skins, they define how each match is played.",
+      "innovations_title": "Beyond the Bullet: Innovations That Set Apex Apart",
+      "innovations_ping": "Intuitive Ping System: Apex’s communication 'tagging' is legendary. With a single button you can mark enemies, point to loot, or indicate a destination. The game even adds context-sensitive callouts. This lets teams coordinate without voice chat – perfect for pub matches or shy players.",
+      "innovations_respawn": "Second-Chance Respawns: Unlike other BRs where death is final, Apex lets your squad rescue you. When a Legend is eliminated, they drop a Respawn Banner. Teammates have a short window to grab it, rush to a Respawn Beacon, and bring their ally back to life. This ups the stakes on fight choices and keeps games exciting.",
+      "innovations_team": "Trios-Only Teamplay: Apex’s base mode is always 3-player teams (with an option for duos or solo 'no fill'). You cannot have duplicate Legends in a squad. This forced trios design means every team member’s role is crucial. The bottom line: Apex puts teamwork first.",
+      "arena_title": "An Ever-Evolving Arena: Maps, Modes & Seasons",
+      "arena_intro": "Apex’s world is always changing. There are multiple massive maps (planets) rotating in the roster. Each map has a unique look and playstyle. The designers constantly tweak these maps: legacy locations have been razed or overhauled and even entire maps shift over time. Seasonal updates drive map evolution. Typically every ~3 months a new Season begins with big changes: a Battle Pass, new Legends, fresh weapons or buffs, and map events. Multiple game modes add variety beyond the core 60-player BR:",
+      "arena_br": "Battle Royale (Trios/Duos): The classic Apex mode – 20 teams of 3 drop in, loot up, and fight to be the last squad standing. (A 'no fill' solo queue is also available.)",
+      "arena_ranked": "Ranked: A competitive ladder (unlocked at level 50) where skill-based matchmaking and seasonal splits let you earn ranks and rewards.",
+      "arena_arenas": "Arenas: A round-based 3v3 deathmatch mode. After being replaced by 'Mixtape' in 2022, Arenas recently returned as a special playlist in Season 25.",
+      "arena_mixtape": "Mixtape (Limited Modes): A rotating set of modes (e.g. 9v9 Control, Team Deathmatch, Gun Run) that swaps every few hours or weeks. This ensures Apex players get variety (and fun breaks from the main BR formula).",
+      "arena_training": "Training & Bot Royale: There’s also an ever-open Firing Range for practice, and modes like Bot Royale (squads vs AI) let players hone skills on smaller maps without pressure.",
+      "competitive_title": "The Apex of Skill: Competitive Play & Esports",
+      "competitive_intro": "Despite its accessibility, Apex has a famously high skill ceiling. Mastering Apex means excelling at aim, positioning, and map awareness and making split-second decisions about fights and rotations. Movement tech rewards practice with huge combat advantages. The game’s meta involves complex prioritization: looting smartly, engaging only when positioned well, and knowing when to back off or push. That depth has paid off in the esports arena. The Apex Legends Global Series (ALGS) is a premier $2 million circuit that crowns world champions each year. The pro scene also feeds back into the game: seeing pros flawlessly execute advanced moves or use creative team combos becomes a spectacle that draws in casual players. Esports hype motivates everyday players to improve, and constant meta shifts keep the competitive landscape fresh.",
+      "why_return_title": "Why We Drop Again: The Enduring Appeal of Apex Legends",
+      "why_return_intro": "So why do players keep coming back, match after match? Apex hits all the fun buttons. Its controls feel great, the feedback is instant, and every round is full of suspense. Team play amplifies this fun: playing with friends (or making new ones online) is always a blast, since cooperation and communication are so woven into Apex’s DNA. Moreover, the hero aspect adds long-term engagement. Each Legend has lore and personality, so players build attachments. The constant stream of new content means the game never feels stale. Each of these pieces reinforces the others. The pick-up-and-play core loop is friendly to newbies, while the high skill floor keeps veterans hungry. The Legends and their evolving balance add layers of strategy. And all of it is underpinned by a vibrant community and esports scene that celebrate the game. In short, Apex Legends delivers on every front – fun, skill, teamwork, variety, and freshness – creating a self-perpetuating cycle that keeps it compelling well into the future.",
+      "headache_title": "The Biggest Headache: Unbalanced Meta & Cheaters",
+      "headache_intro": "Despite all the thrills and polish Apex Legends offers, its biggest ongoing headache remains the frustrating combo of an unbalanced meta and persistent cheating. Players often find themselves at the mercy of overpowered weapon loadouts or Legend combos that dominate the meta, turning what should be tactical gunfights into one-sided stomps. Even with frequent balancing updates from Respawn, matches too often boil down to who got the best RNG or who’s rocking the sweatiest skin combo. For many, it feels like no matter how much you practice, the outcome is often decided by factors outside your control.\nOn top of that, cheaters continue to plague the game, especially in Ranked. Aimbots, no-recoil scripts, and undetectable hardware like Cronus or XIM devices make legit players feel like they’re fighting uphill battles with broken tools. Respawn has taken major steps, banning over 6 million accounts since launch, deploying kernel-level anti-cheat, and cracking down harder in cheat-heavy regions. Their June 2025 update even showed a 30% drop in Ranked lobbies infected by cheaters, thanks to Linux client bans and smarter detection. Still, many feel it’s not enough cheaters just make new accounts, and hardware exploits slip through undetected. This all hits where it hurts: competitive integrity. Skill often feels meaningless when enemies land god-tier shots from impossible angles. Matchmaking becomes chaos, with solo Diamonds regularly getting crushed by full Predator squads. And at the end of the day, when every third match feels unfair, even diehard fans start to wonder if it’s worth grinding anymore.",
+      "headache_meta_title": "",
+      "headache_meta_text": "",
+      "headache_cheat_title": "",
+      "headache_cheat_text": "",
+      "headache_respawn_title": "",
+      "headache_respawn_text": "",
+      "headache_why_title": "",
+      "headache_why_text": "",
+      "headache_matchmaking_title": "",
+      "headache_matchmaking_text": ""
     }
   },
   "development": {

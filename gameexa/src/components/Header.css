@@ -34,6 +34,7 @@
   align-items: center;
   gap: 1rem;
   text-decoration: none;
+  position: relative;
 }
 
 .logo-circle {
@@ -77,6 +78,23 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   font-weight: bold;
   letter-spacing: 1px;
+  position: relative;
+}
+
+.logo-spin {
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: spin 3s linear infinite;
+  display: inline-block;
+  margin-right: 0.1rem;
+  /* Можно добавить glow-эффект */
+  filter: drop-shadow(0 0 8px #FFD700);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Стили навигации */
@@ -514,4 +532,30 @@
     padding: 0.7rem 1rem;
     font-size: 0.9rem;
   }
+}
+
+.beta-badge {
+  display: inline-block;
+  position: absolute;
+  top: -0.85em;
+  right: -2.7em;
+  margin-left: 0;
+  padding: 0.06em 0.38em 0.06em 0.38em;
+  font-size: 0.59rem;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  color: #222;
+  background: linear-gradient(90deg, #FFD700 60%, #ffb347 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 5px #FFD70088, 0 2px 5px #ffb34744;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  z-index: 2;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.beta-badge:hover {
+  box-shadow: 0 0 10px #FFD700cc, 0 4px 10px #ffb347cc;
+  background: linear-gradient(90deg, #ffb347 0%, #FFD700 100%);
 }

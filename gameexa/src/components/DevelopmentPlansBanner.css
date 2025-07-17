@@ -1,29 +1,29 @@
 .development-plans-banner {
-  background: radial-gradient(ellipse at top right, #1a0f3a 60%, #0a0a2a 100%);
+  background: linear-gradient(135deg, #181F2A, #2A2950);
   border-radius: 24px;
   box-shadow: 0 0 24px 6px #00cfff33, 0 0 0 2px #FFD70033;
   padding: 1.8rem 1.5rem;
-  max-width: 320px; /* Увеличил с 280px */
-  min-width: 280px; /* Увеличил с 240px */
+  max-width: 320px;
+  min-width: 280px;
   margin: 2rem auto;
   position: relative;
   overflow: hidden;
   text-align: center;
-  animation: banner-pulse-dev 3s infinite alternate;
+  animation: banner-glow-pulse 3s infinite alternate;
   border: 2px solid #00cfff44;
   height: fit-content;
 }
 
-@keyframes banner-pulse-dev {
+@keyframes banner-glow-pulse {
   0% {
     box-shadow: 0 0 24px 6px #00cfff33, 0 0 0 2px #FFD70033;
     border-color: #00cfff44;
     filter: brightness(1);
   }
   100% {
-    box-shadow: 0 0 48px 12px #00cfff66, 0 0 0 4px #FFD70066;
-    border-color: #00cfff88;
-    filter: brightness(1.05) saturate(1.1);
+    box-shadow: 0 0 48px 12px #FFD70066, 0 0 0 4px #00cfff66;
+    border-color: #FFD70099;
+    filter: brightness(1.08) saturate(1.1);
   }
 }
 
@@ -90,7 +90,7 @@
 }
 
 .banner-button {
-  background: linear-gradient(90deg, #00cfff 0%, #FFD700 100%);
+  background: linear-gradient(90deg, #ffb347 0%, #FFD700 100%);
   color: #222;
   font-weight: bold;
   font-size: 0.9rem;
@@ -100,15 +100,15 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 16px #00cfff44;
+  box-shadow: 0 0 16px #FFD70044;
   transition: all 0.3s;
   margin-top: 0.5rem;
 }
 
 .banner-button:hover {
-  background: linear-gradient(90deg, #FFD700 0%, #00cfff 100%);
-  color: #111;
-  box-shadow: 0 0 24px #FFD70088, 0 0 12px #00cfff88;
+  background: linear-gradient(90deg, #FFD700 0%, #ffb347 100%);
+  color: #222;
+  box-shadow: 0 0 24px #FFD70088, 0 0 12px #ffb34788;
   transform: translateY(-2px);
 }
 

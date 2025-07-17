@@ -1,33 +1,31 @@
-/* Уникальный фон для Apex Legends */
-.apexzone-root {
+/* Космический фон для всей страницы */
+.apexzone-root-new {
   min-height: 100vh;
-  background: linear-gradient(120deg, #1a1a2e 0%, #3a0a2a 100%), url('/assets/apex.jpg') center/cover no-repeat;
-  background-blend-mode: multiply;
+  background: linear-gradient(135deg, #181a2a 0%, #2a225a 60%, #0a0a1a 100%);
   color: #fff;
-  font-family: 'Inter', 'Orbitron', sans-serif;
+  font-family: 'Orbitron', 'Inter', Arial, sans-serif;
   padding-bottom: 3rem;
 }
 
-.apex-hero {
+/* Hero Section */
+.apex-hero-new {
   position: relative;
-  min-height: 60vh;
+  min-height: 48vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   overflow: hidden;
   padding: 4rem 1rem 2rem 1rem;
+  z-index: 1;
 }
-
-.apex-hero-bg {
+.apex-hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at 60% 40%, #ff4655cc 0%, #1a1a2e 80%);
   opacity: 0.7;
   z-index: 1;
 }
-
-.apex-hero-content {
+.apex-hero-content-new {
   position: relative;
   z-index: 2;
   max-width: 700px;
@@ -36,24 +34,25 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  text-align: center;
+  animation: fadeInUp 1.2s cubic-bezier(.23,1.01,.32,1) both;
 }
-
-.apex-logo {
-  width: 120px;
-  border-radius: 1rem;
-  box-shadow: 0 0 32px #ff4655aa;
-  margin-bottom: 1rem;
+.apex-hero-title {
+  font-size: 3rem;
+  font-family: 'Orbitron', 'Inter', Arial, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 24px #ff4655cc, 0 2px 12px #000a;
+  margin-bottom: 0.5rem;
 }
-
-.apex-hero-desc {
+.apex-hero-slogan {
   font-size: 1.3rem;
   opacity: 0.95;
   text-shadow: 0 2px 12px #000a;
+  margin-bottom: 1rem;
 }
-
-.apex-cta-btn {
+.apex-hero-btn {
   display: inline-block;
-  background: linear-gradient(90deg, #ff4655, #ffb347);
+  background: linear-gradient(90deg, #ffb347, #ff4655);
   color: #fff;
   font-weight: 700;
   font-size: 1.1rem;
@@ -66,66 +65,149 @@
   outline: none;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-top: 1rem;
+  animation: pulseGlow 2.5s infinite alternate;
 }
-.apex-cta-btn:hover {
-  background: linear-gradient(90deg, #ffb347, #ff4655);
+.apex-hero-btn:hover {
+  background: linear-gradient(90deg, #ff4655, #ffb347);
   box-shadow: 0 0 32px 8px #ff4655cc, 0 4px 16px #ffb347cc;
   transform: scale(1.07) translateY(-2px);
 }
-
-.apex-section {
-  background: rgba(26, 26, 46, 0.85);
-  border-radius: 1.5rem;
-  margin: 2.5rem auto;
-  max-width: 800px;
-  padding: 2.5rem 2rem 2rem 2rem;
-  box-shadow: 0 4px 32px #ff465522, 0 1.5px 8px #0008;
-}
-
-.apex-section h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2.1rem;
-  margin-bottom: 1.2rem;
-  color: #ff4655;
-  text-shadow: 0 0 12px #ff4655aa;
-}
-
-.apex-guides-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.apex-hero-socials {
   display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  justify-content: center;
 }
-.apex-guides-list a {
-  color: #ffb347;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: underline;
-  transition: color 0.2s;
+.apex-hero-socials .apex-social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5865F2 60%, #ffb347 100%);
+  display: inline-block;
+  opacity: 0.7;
+  box-shadow: 0 0 12px #5865f288;
+  transition: opacity 0.2s, box-shadow 0.2s;
 }
-.apex-guides-list a:hover {
-  color: #ff4655;
+.apex-hero-socials .apex-social-icon:hover {
+  opacity: 1;
+  box-shadow: 0 0 24px #ffb347cc;
 }
 
-.apex-trailer-wrapper {
+/* Tabs */
+.apex-tabs-new {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  gap: 1.2rem;
+  margin: 2.2rem 0 1.5rem 0;
+  z-index: 2;
 }
-.apex-trailer-wrapper iframe {
-  border-radius: 1rem;
-  box-shadow: 0 0 24px #ff465588;
-  width: 100%;
-  max-width: 560px;
-  min-height: 315px;
+.apex-tab-btn-new {
+  background: rgba(30, 30, 50, 0.85);
+  color: #fff;
+  font-family: 'Orbitron', 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1.2rem 1.2rem 0 0;
+  padding: 0.7rem 2.2rem;
+  margin-bottom: -2px;
+  box-shadow: 0 2px 8px #0004;
+  cursor: pointer;
+  transition: color 0.18s, background 0.18s, box-shadow 0.18s, transform 0.18s;
+  outline: none;
+  position: relative;
+}
+.apex-tab-btn-new.active {
+  background: linear-gradient(90deg, #ffb347 30%, #ff4655 100%);
+  color: #fff;
+  box-shadow: 0 0 18px 4px #ff465588, 0 2px 8px #ffb34788;
+  z-index: 2;
+  transform: scale(1.08);
+  text-shadow: 0 0 8px #ffb347cc;
+}
+.apex-tab-btn-new:not(.active):hover {
+  background: rgba(255, 180, 71, 0.12);
+  color: #ffb347;
+  box-shadow: 0 0 8px #ffb34744;
 }
 
-.apex-community {
-  text-align: center;
+/* Tab Content */
+.apex-tab-content-new {
+  background: rgba(24, 26, 42, 0.92);
+  border-radius: 1.5rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 900px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 4px 32px #ff465522, 0 1.5px 8px #0008;
+  animation: fadeIn 0.7s cubic-bezier(.23,1.01,.32,1) both;
 }
-.apex-discord-btn {
+.apex-tab-content-new section + section {
+  margin-top: 2.2rem;
+}
+.apex-tab-content-new h2, .apex-tab-content-new h3 {
+  font-family: 'Orbitron', 'Inter', Arial, sans-serif;
+  color: #ffb347;
+  text-shadow: 0 0 8px #ffb34788;
+  margin-bottom: 0.7rem;
+}
+.apex-tab-content-new h2 {
+  font-size: 2rem;
+}
+.apex-tab-content-new h3 {
+  font-size: 1.3rem;
+}
+.apex-tab-content-new ul {
+  margin-left: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.apex-features-list li {
+  margin-bottom: 0.3rem;
+  list-style: disc;
+}
+
+/* Guide Cards */
+.apex-guides-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.apex-guide-card {
+  background: linear-gradient(120deg, #23234a 60%, #181a2a 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #ff465544, 0 1.5px 8px #0008;
+  padding: 1.2rem 1.1rem;
+  min-width: 220px;
+  max-width: 270px;
+  flex: 1 1 220px;
+  color: #fff;
+  transition: box-shadow 0.18s, transform 0.18s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) both;
+}
+.apex-guide-card:hover {
+  box-shadow: 0 0 24px #ffb347cc, 0 4px 16px #ff4655cc;
+  transform: translateY(-4px) scale(1.04);
+}
+.apex-guide-card h4 {
+  color: #ffb347;
+  margin-bottom: 0.3rem;
+}
+.apex-guide-card a {
+  color: #ff4655;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: auto;
+  transition: color 0.18s;
+}
+.apex-guide-card a:hover {
+  color: #ffb347;
+}
+
+/* Discord Button */
+.apex-discord-btn-new {
   display: inline-block;
   background: linear-gradient(90deg, #5865F2, #ff4655);
   color: #fff;
@@ -141,27 +223,350 @@
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-top: 1rem;
 }
-.apex-discord-btn:hover {
+.apex-discord-btn-new:hover {
   background: linear-gradient(90deg, #ff4655, #5865F2);
   box-shadow: 0 0 32px 8px #ff4655cc, 0 4px 16px #5865f2cc;
   transform: scale(1.07) translateY(-2px);
 }
 
-@media (max-width: 600px) {
-  .apex-hero-content {
+/* Streamers List */
+.apex-streamers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.apex-streamers-list a {
+  color: #ffb347;
+  text-decoration: underline;
+  margin-right: 0.5rem;
+  transition: color 0.18s;
+}
+.apex-streamers-list a:hover {
+  color: #ff4655;
+}
+
+/* Placeholder blocks for gallery, fanart, etc. */
+.apex-tab-content-new [class*='gallery'],
+.apex-tab-content-new [class*='fanart'] {
+  min-height: 120px;
+  background: repeating-linear-gradient(135deg, #23234a 0 20px, #181a2a 20px 40px);
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb347;
+  font-size: 1.1rem;
+  opacity: 0.7;
+  margin-bottom: 1.2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 18px 4px #ff465588, 0 2px 8px #ffb34788; }
+  to { box-shadow: 0 0 32px 8px #ff4655cc, 0 4px 16px #ffb347cc; }
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+  .apex-tab-content-new {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .apex-hero-content-new {
     max-width: 98vw;
     padding: 0 0.5rem;
   }
-  .apex-logo {
-    width: 80px;
+}
+@media (max-width: 600px) {
+  .apex-hero-title {
+    font-size: 2rem;
   }
-  .apex-section {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  .apex-hero-slogan {
+    font-size: 1rem;
   }
-  .apex-section h2 {
-    font-size: 1.3rem;
+  .apex-tabs-new {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-  .apex-trailer-wrapper iframe {
-    min-height: 180px;
+  .apex-tab-btn-new {
+    font-size: 0.95rem;
+    padding: 0.5rem 1.1rem;
+  }
+  .apex-guide-card {
+    min-width: 140px;
+    max-width: 98vw;
+    padding: 0.7rem 0.5rem;
+  }
+} 
+
+/* Используем Orbitron для всех важных элементов */
+.apex-hero-title,
+.apex-hero-slogan,
+.apex-hero-btn,
+.apex-tabs-new,
+.apex-tab-btn-new,
+.apex-tab-content-new h2,
+.apex-tab-content-new h3,
+.apex-guide-card h4,
+.apex-discord-btn-new,
+.apex-streamers-list a {
+  font-family: 'Orbitron', Arial, sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.apex-hero-title {
+  font-weight: 900;
+  text-shadow: 0 0 24px #FFD700cc, 0 2px 12px #ff4655a0;
+  color: #FFD700;
+}
+
+.apex-hero-slogan {
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 8px #FFD70088, 0 2px 8px #000a;
+}
+
+.apex-hero-btn {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px #FFD70088;
+}
+
+.apex-tabs-new {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.apex-tab-btn-new {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #FFD70044;
+}
+
+.apex-tab-btn-new.active {
+  color: #FFD700;
+  text-shadow: 0 0 12px #FFD700cc, 0 2px 8px #ff4655a0;
+}
+
+/* Заголовки — Orbitron, но легче и мягче */
+.apex-tab-content-new h2, .apex-tab-content-new h3 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #FFD700;
+  text-shadow: 0 0 6px #FFD70088, 0 2px 6px #ff465544;
+  margin-bottom: 0.7rem;
+  border-radius: 6px;
+}
+
+.apex-tab-content-new h2 {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.apex-tab-content-new h3 {
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+/* Основной текст — Inter/Arial, без glow, с хорошей читаемостью */
+.apex-tab-content-new,
+.apex-tab-content-new p,
+.apex-tab-content-new ul,
+.apex-tab-content-new li {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.7;
+  text-shadow: none;
+}
+
+.apex-tab-content-new ul {
+  margin-left: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.apex-tab-content-new section + section {
+  margin-top: 2.5rem;
+}
+
+.apex-guide-card h4 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 8px #FFD70088;
+}
+
+.apex-discord-btn-new {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 8px #FFD70088;
+}
+
+.apex-streamers-list a {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+} 
+
+.apex-hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/apex-hero-bg.jpg') center center/cover no-repeat;
+  z-index: 0;
+  opacity: 0.82;
+  transition: opacity 0.3s;
+}
+
+@media (max-width: 900px) {
+  .apex-hero-bg-img {
+    background-position: center 30%;
+  }
+}
+@media (max-width: 600px) {
+  .apex-hero-bg-img {
+    background-position: center 40%;
+  }
+} 
+
+#overview-intro,
+#overview-why,
+#overview-movement,
+#overview-legends,
+#overview-innovations,
+#overview-arena,
+#overview-competitive,
+#overview-why-return,
+#overview-headache {
+  scroll-margin-top: 5.5rem;
+} 
+
+.apex-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.apex-toc button {
+  background: #102040;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  border: 1.5px solid #2196f3;
+  border-radius: 10px;
+  padding: 0.38rem 0.8rem;
+  box-shadow: none;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  outline: none;
+  text-align: left;
+  letter-spacing: 0.2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 1.25;
+}
+.apex-toc button:hover, .apex-toc button:focus {
+  border-color: #64b5f6;
+  background: #173060;
+  color: #fff;
+} 
+
+.apex-toc-grid ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 44px;
+  gap: 1rem 1.5rem;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.apex-toc-grid button {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  text-align: left;
+  height: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding-top: 0.38rem;
+  padding-bottom: 0.38rem;
+  font-size: 0.92rem;
+  line-height: 1.25;
+} 
+
+.apex-back-to-top {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 4.5rem;
+  z-index: 2000;
+  background: linear-gradient(90deg, #102040 60%, #23234d 100%);
+  color: #FFD700;
+  border: 2px solid #2196f3;
+  border-radius: 50px;
+  padding: 0.7rem 1.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 0 16px #2196f355, 0 0 2px #FFD70055;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(30px) scale(0.98);
+  transition: opacity 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+  outline: none;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.apex-back-to-top.show {
+  opacity: 0.92;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.apex-back-to-top:hover, .apex-back-to-top:focus {
+  background: #FFD700;
+  color: #102040;
+  border-color: #64b5f6;
+  box-shadow: 0 0 32px #FFD70099, 0 0 8px #2196f3aa;
+  opacity: 1;
+  transform: translateY(-4px) scale(1.05);
+} 
+
+@media (max-width: 900px) {
+  .apex-back-to-top {
+    right: 1.2rem;
+    bottom: 3.2rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .apex-back-to-top {
+    right: 0.7rem;
+    bottom: 2.2rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.9rem;
   }
 } 
