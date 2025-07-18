@@ -5,7 +5,7 @@ export default function DiscordBanner() {
   const { t } = useTranslation();
 
   const handleJoinDiscord = () => {
-    window.open('https://discord.gg/n9hG3Q22', '_blank', 'noopener,noreferrer');
+    window.open('https://discord.gg/bNDg3ngXS6', '_blank', 'noopener,noreferrer');
   };
 
   return (

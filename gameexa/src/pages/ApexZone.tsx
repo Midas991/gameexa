@@ -1,4 +1,3 @@
-// src/pages/ApexZone.tsx
 import { useState } from 'react';
 import './ApexZone.css';
 import { useTranslation } from 'react-i18next';
@@ -51,6 +50,7 @@ function OverviewTab() {
     <div className="apex-tab-content-new fade-in">
       <section id="overview-intro">
         <h1 className="apex-title">{t('apex.overview.title')}</h1>
+        <img src="/assets/apex-legends-old.jpg" alt="Apex Legends Classic Squad" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         <p>{t('apex.overview.intro')}</p>
       </section>
       {/* Table of Contents */}
@@ -86,6 +86,7 @@ function OverviewTab() {
       </section>
       <section id="overview-legends">
         <h2 className="apex-section-title">{t('apex.overview.legends_title')}</h2>
+        <img src="/assets/apex-legends-characters.jpg" alt="Apex Legends Characters" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         <p>{t('apex.overview.legends_intro')}</p>
         <ul>
           <li>{t('apex.overview.legends_passive')}</li>
@@ -104,6 +105,7 @@ function OverviewTab() {
       </section>
       <section id="overview-arena">
         <h2 className="apex-section-title">{t('apex.overview.arena_title')}</h2>
+        <img src="/assets/apex-legends-mode.jpg" alt="Apex Legends game modes" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         <p>{t('apex.overview.arena_intro')}</p>
         <ul>
           <li>{t('apex.overview.arena_br')}</li>
@@ -123,6 +125,7 @@ function OverviewTab() {
       </section>
       <section id="overview-headache" className="apex-headache-section">
         <h2 className="apex-section-title">{t('apex.overview.headache_title')}</h2>
+        <img src="/assets/ash-apex-legends.jpg" alt="Apex Legends - Ash" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         {t('apex.overview.headache_intro').split('\n').map((p, i) => <p key={i}>{p}</p>)}
       </section>
     </div>

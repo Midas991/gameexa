@@ -88,38 +88,49 @@
 }
 
 .scroll-button {
-  background: linear-gradient(90deg, #6ec3f7 0%, #00e6cb 50%, #3a8dde 100%);
+  background: linear-gradient(90deg, #ffb347 0%, #FFD700 50%, #ffb347 100%);
   background-size: 200% 100%;
-  animation: btn-glow 2s infinite alternate, gradient-shift 8s infinite linear, neon-pulse 2.5s infinite alternate;
-  color: #0A0A2A;
-  border: none;
-  border-radius: 32px;
-  padding: 14px 48px;
-  font-size: 1.3rem;
+  animation: gradient-shift 3s linear infinite;
+  color: #222;
   font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 40px;
+  padding: 14px 48px;
   cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.2s;
-  box-shadow: 0 0 10px #b3eaff88, 0 0 4px #fff8;
-  text-decoration: none;
-  display: inline-block;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 24px 6px #FFD70055, 0 0 48px 12px #ffb34733;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
   letter-spacing: 1px;
-  text-shadow: 0 0 8px #fff, 0 0 16px #3a8dde;
-}
-
-@keyframes neon-pulse {
-  0% {
-    box-shadow: 0 0 10px #b3eaff88, 0 0 4px #fff8;
-  }
-  100% {
-    box-shadow: 0 0 20px #fff6, 0 0 10px #b3eaff88, 0 0 4px #fff6;
-  }
+  text-shadow: none;
+  z-index: 1;
 }
 
 .scroll-button:hover {
-  box-shadow: 0 0 24px #fff6, 0 0 16px #b3eaff88, 0 0 8px #fff6;
-  transform: scale(1.07);
+  background: linear-gradient(90deg, #FFD700 0%, #ffb347 100%);
+  color: #222;
+  box-shadow: 0 0 36px 10px #FFD70088, 0 0 64px 18px #ffb34755;
+  transform: translateY(-2px) scale(1.07);
+}
+
+.scroll-button .button-glow {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  border-radius: 40px;
+  background: radial-gradient(circle, #ff6b6b33 0%, #FFD70022 80%, transparent 100%);
+  filter: blur(6px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.scroll-button .button-text {
+  position: relative;
+  z-index: 2;
 }
 
 /* Удалены стили :active и :focus, если они не нужны для новой стилистики. */

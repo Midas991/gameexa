@@ -42,7 +42,8 @@ export default function Home() {
             e.preventDefault();
             document.querySelector('#games')?.scrollIntoView({ behavior: 'smooth' });
           }}>
-            {t('hero.explore')}
+            <span className="button-text">{t('hero.explore')}</span>
+            <div className="button-glow"></div>
           </a>
         </div>
       </section>
