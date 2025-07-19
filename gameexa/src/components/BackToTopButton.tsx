@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../pages/ApexZone.css';
 
 function scrollToTopUniversal() {
@@ -12,23 +12,26 @@ function scrollToTopUniversal() {
 function isScrolledDown() {
   if (typeof window === 'undefined') return false;
   const main = document.querySelector('main');
+  const threshold = 60; // было 20, теперь в 3 раза больше
   return (
-    (document.body && document.body.scrollTop > 20) ||
-    (window.scrollY && window.scrollY > 20) ||
-    (document.documentElement && document.documentElement.scrollTop > 20) ||
-    (main && main.scrollTop > 20)
+    (document.body && document.body.scrollTop > threshold) ||
+    (window.scrollY && window.scrollY > threshold) ||
+    (document.documentElement && document.documentElement.scrollTop > threshold) ||
+    (main && main.scrollTop > threshold)
   );
 }
 
 export default function BackToTopButton() {
   const [visible, setVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const justClickedRef = useRef(false);
 
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth <= 600);
     onResize();
     window.addEventListener('resize', onResize);
     const interval = setInterval(() => {
+      if (justClickedRef.current) return;
       setVisible(!!isScrolledDown());
     }, 100);
     return () => {
@@ -38,8 +41,14 @@ export default function BackToTopButton() {
   }, []);
 
   const handleClick = () => {
-    setVisible(false);
-    scrollToTopUniversal();
+    setVisible(false); // скрыть сразу
+    justClickedRef.current = true;
+    setTimeout(() => {
+      justClickedRef.current = false;
+    }, 800); // блокируем появление на 800мс
+    setTimeout(() => {
+      scrollToTopUniversal();
+    }, 10); // чуть позже, чтобы скрытие сработало мгновенно
   };
 
   return (
@@ -51,4 +60,4 @@ export default function BackToTopButton() {
       ↑{!isMobile && ' Back to Top'}
     </button>
   );
-} 
+}

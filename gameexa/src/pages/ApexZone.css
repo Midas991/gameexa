@@ -118,12 +118,13 @@
   position: relative;
 }
 .apex-tab-btn-new.active {
-  background: linear-gradient(90deg, #ffb347 30%, #ff4655 100%);
-  color: #fff;
-  box-shadow: 0 0 18px 4px #ff465588, 0 2px 8px #ffb34788;
+  background: linear-gradient(90deg, #ff9800 10%, #ff6a00 60%, #c62848 100%);
+  color: #fff !important;
+  box-shadow: 0 0 18px 4px #c6284888, 0 2px 8px #ff980088;
   z-index: 2;
   transform: scale(1.08);
-  text-shadow: 0 0 8px #ffb347cc;
+  border: none;
+  outline: none;
 }
 .apex-tab-btn-new:not(.active):hover {
   background: rgba(255, 180, 71, 0.12);
@@ -176,24 +177,32 @@
   background: linear-gradient(120deg, #23234a 60%, #181a2a 100%);
   border-radius: 1.2rem;
   box-shadow: 0 2px 12px #ff465544, 0 1.5px 8px #0008;
-  padding: 1.2rem 1.1rem;
+  padding: 0.7rem 1.1rem 1.2rem 1.1rem;
   min-width: 220px;
   max-width: 270px;
   flex: 1 1 220px;
-  color: #fff;
+  color: #ffeebb;
   transition: box-shadow 0.18s, transform 0.18s;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  justify-content: flex-start;
+  gap: 0.3rem;
   animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) both;
+  min-height: 300px;
 }
 .apex-guide-card:hover {
   box-shadow: 0 0 24px #ffb347cc, 0 4px 16px #ff4655cc;
   transform: translateY(-4px) scale(1.04);
 }
 .apex-guide-card h4 {
-  color: #ffb347;
-  margin-bottom: 0.3rem;
+  color: #fff;
+  margin-bottom: 0;
+  min-height: 3.2em;
+  display: flex;
+  align-items: flex-start;
+  background: none;
+  box-shadow: none;
+  padding: 0;
 }
 .apex-guide-card a {
   color: #ff4655;
@@ -204,6 +213,10 @@
 }
 .apex-guide-card a:hover {
   color: #ffb347;
+}
+.apex-guide-card p {
+  color: #ffeebb;
+  margin-top: 0;
 }
 
 /* Discord Button */
@@ -569,4 +582,79 @@
     font-size: 1.1rem;
     padding: 0.5rem 0.9rem;
   }
+} 
+
+.guide-btn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.55rem 1.2rem;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 1.01rem;
+  font-weight: 700;
+  color: #222;
+  background: linear-gradient(90deg, #ffb347 0%, #FFD700 100%);
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 0 18px 2px #FFD70044, 0 1.5px 8px #ffb34733;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.22s, box-shadow 0.22s, transform 0.18s, color 0.18s;
+  text-shadow: none;
+  position: relative;
+}
+.guide-btn:hover, .guide-btn:focus {
+  background: linear-gradient(90deg, #FFD700 0%, #ffb347 100%);
+  color: #222;
+  box-shadow: 0 0 18px 4px #FFD70077, 0 2px 8px #ffb34766;
+  transform: translateY(-2px) scale(1.05);
+  outline: none;
+} 
+
+@media (min-width: 900px) {
+  .apex-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+} 
+
+.apex-guide-title-wrap {
+  background: linear-gradient(90deg, #2a3a6a 60%, #3f5a8f 100%);
+  border-bottom: 2.5px solid #FFD700;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  padding: 0.35em 0.7em 0.25em 0.7em;
+  margin: -0.7rem -1.1rem 0.18rem -1.1rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  animation: fade-gradient-move 8s cubic-bezier(.4,.2,.6,1) 2s infinite;
+}
+@keyframes fade-gradient-move {
+  0% { background-position: 0% 0%; }
+  60% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+.apex-guide-title-wrap::after {
+  content: '';
+  position: absolute;
+  top: -30%; left: -60%;
+  width: 80%; height: 180%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.28) 15%, rgba(90,180,255,0.18) 60%, transparent 100%);
+  filter: blur(2.5px);
+  opacity: 0.22;
+  box-shadow: 0 0 28px 10px rgba(255,255,255,0.18), 0 0 32px 16px rgba(90,180,255,0.13);
+  border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+  transform: skew(-18deg) scaleX(1.2);
+  animation: glassy-shimmer 8s cubic-bezier(.4,.2,.6,1) infinite;
+  animation-delay: 2s;
+  pointer-events: none;
+}
+@keyframes glassy-shimmer {
+  0% { left: -60%; opacity: 0; }
+  10% { opacity: 0.13; }
+  60% { left: 80%; opacity: 0.13; }
+  80% { opacity: 0; }
+  100% { left: 120%; opacity: 0; }
 } 

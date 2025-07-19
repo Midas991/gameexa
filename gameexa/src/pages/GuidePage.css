@@ -1,0 +1,116 @@
+body, .guidepage-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181a2a 0%, #2a225a 60%, #0a0a1a 100%);
+  color: #fff;
+  font-family: 'Orbitron', 'Inter', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.guidepage-root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3.5rem 1rem 2.5rem 1rem;
+}
+
+.guidepage-card {
+  background: linear-gradient(120deg, #23234a 60%, #181a2a 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px #ff465522, 0 1.5px 8px #0008;
+  max-width: 600px;
+  width: 100%;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  position: relative;
+  animation: fadeIn 0.7s cubic-bezier(.23,1.01,.32,1) both;
+}
+
+.guidepage-back {
+  background: linear-gradient(90deg, #ffb347 0%, #ff4655 100%);
+  color: #fff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0 12px #ff465544, 0 1.5px 8px #0008;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.22s, box-shadow 0.22s, transform 0.18s;
+  outline: none;
+}
+.guidepage-back:hover, .guidepage-back:focus {
+  background: linear-gradient(90deg, #ff4655 0%, #ffb347 100%);
+  color: #fff;
+  box-shadow: 0 0 18px #ffb347cc, 0 2px 8px #ff4655cc;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.guidepage-title {
+  font-size: 2.1rem;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  font-family: 'Orbitron', Arial, sans-serif;
+  text-shadow: 0 0 12px #FFD70088;
+}
+.guidepage-subtitle {
+  font-size: 1.1rem;
+  color: #ffeebb;
+  margin-bottom: 1.1rem;
+  font-weight: 400;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.guidepage-meta {
+  color: #b6c6ff;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  opacity: 0.85;
+}
+.guidepage-content {
+  font-size: 1.08rem;
+  color: #fff;
+  line-height: 1.7;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.guidepage-content h3 {
+  color: #FFD700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+.guidepage-content ul, .guidepage-content ol {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+.guidepage-content li {
+  margin-bottom: 0.3rem;
+}
+.guidepage-content blockquote {
+  background: linear-gradient(90deg, #23234a 60%, #181a2a 100%);
+  border-left: 4px solid #FFD700;
+  color: #ffeebb;
+  margin: 1.2rem 0;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.7rem;
+  font-style: italic;
+  opacity: 0.92;
+}
+.guidepage-content a {
+  color: #00cfff;
+  text-decoration: underline;
+  transition: color 0.18s;
+}
+.guidepage-content a:hover {
+  color: #FFD700;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+} 

@@ -95,7 +95,6 @@
     0 0 12px 4px rgba(0, 207, 255, 0.3),
     0 0 20px 8px rgba(255, 215, 0, 0.2),
     0 0 0 1px rgba(0, 207, 255, 0.4);
-  filter: brightness(1.12) saturate(1.25);
   z-index: 2;
   position: relative;
   animation: card-glow-pulse 1.2s infinite alternate;
@@ -131,7 +130,7 @@
 }
 
 .game-card:hover img {
-  filter: brightness(1.2) drop-shadow(0 0 6px #00cfff) drop-shadow(0 0 3px #FFD700);
+  /* filter: none; убрано увеличение яркости и drop-shadow */
 }
 
 @keyframes card-glow-pulse {

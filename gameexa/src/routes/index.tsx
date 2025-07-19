@@ -8,6 +8,7 @@ import OverZone from '../pages/OverZone';
 import PUBGZone from '../pages/PUBGZone';
 import RLZone from '../pages/RLZone';
 import DevelopmentPlans from '../pages/DevelopmentPlans';
+import GuidePage from '../pages/GuidePage';
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/pubg" element={<PUBGZone />} />
       <Route path="/rocketleague" element={<RLZone />} />
       <Route path="/development" element={<DevelopmentPlans />} />
+      <Route path="/guides/:id" element={<GuidePage />} />
     </Routes>
   );
 }

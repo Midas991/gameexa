@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './ApexZone.css';
 import { useTranslation } from 'react-i18next';
 import BackToTopButton from '../components/BackToTopButton';
+import { Link } from 'react-router-dom';
 
 const TABS = ['overview', 'guides', 'customization', 'community'];
 
@@ -76,6 +77,7 @@ function OverviewTab() {
       </section>
       <section id="overview-movement">
         <h2 className="apex-section-title">{t('apex.overview.movement_title')}</h2>
+        <img src="/assets/octane-apex-legends.jpg" alt="Octane Apex Legends" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         <p>{t('apex.overview.movement_intro')}</p>
         <ul>
           <li>{t('apex.overview.movement_wallbounce')}</li>
@@ -117,6 +119,7 @@ function OverviewTab() {
       </section>
       <section id="overview-competitive">
         <h2 className="apex-section-title">{t('apex.overview.competitive_title')}</h2>
+        <img src="/assets/algs1.jpg" alt="Apex Legends Global Series" style={{width: '100%', borderRadius: '18px', margin: '24px 0'}} />
         <p>{t('apex.overview.competitive_intro')}</p>
       </section>
       <section id="overview-why-return">
@@ -143,26 +146,29 @@ function GuidesTab() {
         <div className="apex-guides-grid">
           {/* Example guide cards */}
           <div className="apex-guide-card">
-            <h4>Beginner’s Guide</h4>
+            <div className="apex-guide-title-wrap">
+              <h4>Beginner’s Guide</h4>
+            </div>
             <p>Learn the basics of movement, shooting, and teamwork in Apex Legends.</p>
-            <a href="#">Read Guide</a>
+            <Link to="/guides/beginners" className="guide-btn">Read Guide</Link>
           </div>
           <div className="apex-guide-card">
-            <h4>Legend Abilities Explained</h4>
+            <div className="apex-guide-title-wrap">
+              <h4>Legend Abilities Explained</h4>
+            </div>
             <p>Deep dive into each Legend’s unique skills and how to use them effectively.</p>
-            <a href="#">Read Guide</a>
+            <button className="guide-btn">Read Guide</button>
           </div>
           <div className="apex-guide-card">
-            <h4>Weapon Tier List</h4>
+            <div className="apex-guide-title-wrap">
+              <h4>Weapon Tier List</h4>
+            </div>
             <p>Find out which weapons dominate the current meta and why.</p>
-            <a href="#">Read Guide</a>
+            <button className="guide-btn">Read Guide</button>
           </div>
         </div>
       </section>
-      <section>
-        <h3>Popular Guides</h3>
-        {/* TODO: Add popular/recommended guides here */}
-      </section>
+      {/* Popular Guides section removed */}
       <section>
         <h3>Submit Your Guide</h3>
         <p>Want to share your knowledge? <a href="#">Submit your own guide here.</a></p>
