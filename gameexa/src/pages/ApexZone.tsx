@@ -57,14 +57,14 @@ function OverviewTab() {
       {/* Table of Contents */}
       <nav className="apex-toc apex-toc-grid">
         <ul>
-          <li><button type="button" onClick={() => document.getElementById('overview-why')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Why Apex is a Free-to-Play</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-movement')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Mastering the Movement:</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-legends')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Characters</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-innovations')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Innovations</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-arena')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Maps, Modes & Seasons</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-competitive')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Competitive Play & Esports</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-why-return')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Why We coming back</button></li>
-          <li><button type="button" onClick={() => document.getElementById('overview-headache')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Unbalanced Meta & Cheaters</button></li>
+          <li><button type="button" data-long-text="true" onClick={() => document.getElementById('overview-why')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_why')}</button></li>
+          <li><button type="button" onClick={() => document.getElementById('overview-movement')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_movement')}</button></li>
+          <li><button type="button" onClick={() => document.getElementById('overview-legends')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_legends')}</button></li>
+          <li><button type="button" onClick={() => document.getElementById('overview-innovations')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_innovations')}</button></li>
+          <li><button type="button" data-long-text="true" onClick={() => document.getElementById('overview-arena')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_arena')}</button></li>
+          <li><button type="button" data-long-text="true" onClick={() => document.getElementById('overview-competitive')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_competitive')}</button></li>
+          <li><button type="button" onClick={() => document.getElementById('overview-why-return')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_why_return')}</button></li>
+          <li><button type="button" data-long-text="true" onClick={() => document.getElementById('overview-headache')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>{t('apex.overview.toc_headache')}</button></li>
         </ul>
       </nav>
       <section id="overview-why">

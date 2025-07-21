@@ -1,22 +1,22 @@
 {
   "hero": {
-    "description": "Dein Tor zu Spielzonen, Guides und Community",
-    "explore": "Entdecken"
+    "description": "Dein Tor zu Spielzonen, Anleitungen und Community",
+    "explore": "Erkunden"
   },
   "discord": {
-    "title": "Tritt unserer <1>Neuen Spiele-Galaxie</1> auf",
-    "main": "Discord bei!",
-    "desc": "Entdecke Guides, vernetze dich mit Spielern und levelt gemeinsam auf",
+    "title": "Tritt unserer Neuen Spielgalaxie bei auf",
+    "main": "Discord!",
+    "desc": "Entdecke Anleitungen, verbinde dich mit Spielern und steige gemeinsam auf",
     "button": "Beitreten"
   },
   "developmentBanner": {
-    "title": "Blick in die Zukunft",
-    "desc": "Entdecke unsere Entwicklungspläne. Dein Feedback ist wichtig!",
+    "title": "Zukunftsvision",
+    "desc": "Entdecke unsere Entwicklungspläne. Dein Feedback ist uns wichtig!",
     "button": "Mehr erfahren"
   },
   "support": {
-    "title": "Unterstütze Gameexa",
-    "desc": "Gefällt dir Gameexa? Hilf uns zu wachsen und noch besser zu werden!",
+    "title": "Gameexa unterstützen",
+    "desc": "Liebst du Gameexa? Hilf uns zu wachsen und noch besser zu werden!",
     "button": "Projekt unterstützen"
   },
   "footer": {
@@ -25,26 +25,26 @@
   },
   "tabs": {
     "overview": "Übersicht",
-    "guides": "Guides",
+    "guides": "Anleitungen",
     "custom": "Anpassung",
     "community": "Community",
     "overviewText": "Spielübersicht, Mechaniken, Trailer...",
-    "guidesText": "Guides für Anfänger & Profis, Tipps & Tricks...",
+    "guidesText": "Anfänger- & Profi-Anleitungen, Tipps & Tricks...",
     "customText": "Skins, Loadouts, Fortschrittssysteme...",
     "communityText": "Discord, Clans, Events, Fan-Art..."
   },
   "games": {
     "Apex Legends": {
       "title": "Apex Legends",
-      "desc": "Battle Royale Hero-Shooter mit Teams und Fähigkeiten"
+      "desc": "Königskampf Hero-Shooter mit Squads und Fähigkeiten"
     },
     "Counter-Strike 2": {
       "title": "Counter-Strike 2",
-      "desc": "Legendärer Taktik-Shooter mit Teamplay und Skill"
+      "desc": "Legendärer Taktik-Shooter, Teamplay und Können"
     },
     "Fortnite": {
       "title": "Fortnite",
-      "desc": "Buntes Battle Royale mit Bauen und Events"
+      "desc": "Farbenfroher Königskampf mit Bauen und Events"
     },
     "GTA V": {
       "title": "GTA V",
@@ -52,15 +52,72 @@
     },
     "Overwatch": {
       "title": "Overwatch",
-      "desc": "Team-Shooter mit einzigartigen Helden und Fähigkeiten"
+      "desc": "Teambasierter Shooter mit einzigartigen Helden und Fähigkeiten"
     },
     "PUBG": {
       "title": "PUBG",
-      "desc": "Klassisches Battle Royale mit realistischer Action und Taktik"
+      "desc": "Klassischer Königskampf, realistische Schießereien und Taktiken"
     },
     "Rocket League": {
       "title": "Rocket League",
-      "desc": "Fußball mit Raketenautos. Einfacher Spaß"
+      "desc": "Fußball mit raketenbetriebenen Autos. Purer Spaß"
+    }
+  },
+  "apex": {
+    "overview": {
+      "title": "DIE SPANNENDE WELT DES KÖNIGSKAMPFS",
+      "intro": "Apex Legends eroberte im Februar 2019 die Bühne und verschmolz rasante FPS-Action im Titanfall-Stil mit Hero-Shooter-Taktiken. Respawns kostenloser Königskampf verzeichnete in den ersten 8 Stunden 1 Million Downloads und im ersten Monat 50 Millionen Spieler. Heute zählt er Hunderte Millionen Spieler (EA berichtet, dass über 200 Millionen Menschen gespielt haben) und hat EA über 3,4 Milliarden US-Dollar Umsatz eingebracht. Dieser Erfolg ist nicht nur Glück – das kostenlose Modell beseitigt Barrieren und baut eine riesige Community auf, die wiederum kontinuierliche Updates (Battle Passes, neue Skins, Legenden usw.) finanziert und das Esports-Ökosystem von Apex antreibt.",
+      "why_title": "Warum Apex eine Free-to-Play-Erfolgsgeschichte ist",
+      "why_free": "Kostenlos für alle: Keine Vorabkosten bedeuten, dass jeder einsteigen kann, was die Spielerbasis sofort aufbläht. Mehr Spieler bedeuten schnelleres Matchmaking und eine lebendigere Spielwelt.",
+      "why_engagement": "Kontinuierliches Engagement: Die Monetarisierung basiert auf Kosmetika und Saisonpässen, daher muss Respawn das Spiel frisch halten. Alle paar Monate erscheint eine neue Saison mit einem Battle Pass und großen Inhalten (neue Legende, Waffen, Kartenänderungen). Dieses Live-Service-Modell hält Spieler langfristig bei der Stange und lockt ehemalige Fans mit 'Was gibt es Neues?' zurück.",
+      "why_esports": "Wettbewerbsfähiges Ökosystem: Ein riesiger Spielerpool fließt direkt in den Esports (die Apex Legends Global Series) und das Ranglistenspiel. Mehr Spieler bedeuten mehr Wettbewerb, engere skillbasierte Matches und eine reiche Talentpipeline für Profiteams.",
+      "movement_title": "Die Bewegung meistern: Flüssigkeit auf dem Schlachtfeld",
+      "movement_intro": "Eines der am meisten gelobten Features von Apex ist sein Bewegungssystem. Respawn hat die Bedeutung flüssiger Bewegung voll und ganz erkannt, und die Karten sind darauf ausgelegt, sie zu fördern. Sie können sprinten, während Sie zielen, (die meisten) Wände erklimmen und mit einem einzigen Knopfdruck Hänge hinunterrutschen. Seilrutschen und Sprungfelder sind überall. Das Ergebnis ist eine nahtlose, schnelle Fortbewegung – ein 'reibungsloses' Erlebnis, das es Ihnen ermöglicht, sich auf Taktik und Schießen zu konzentrieren, nicht auf klobige Steuerung. Zusätzlich zu den Grundlagen unterstützt Apex fortgeschrittene Techniken für diejenigen, die zusätzliche Mobilität wünschen:",
+      "movement_wallbounce": "Wall-Bouncing: Laufen Sie gegen eine Wand und tippen Sie auf Springen, um von ihr abzuprallen. Richtig ausgeführt, kann dies Ihnen zusätzliche Höhe verleihen oder die Richtung in der Luft schnell ändern.",
+      "movement_tapstrafe": "Tap-Strafing: Ein fortgeschrittener Trick (beliebt auf dem PC), der es Ihnen ermöglicht, extrem scharfe Richtungswechsel in der Luft vorzunehmen, indem Sie Ihre Vorwärtstaste mit dem Mausrad antippen. Er kann sogar 180°-Drehungen im Flug ermöglichen, was Sie zu einem sehr schwer zu treffenden Ziel macht.",
+      "movement_superglide": "Supergliding: Timen Sie einen Sprung + Ducken aus einem Wandaufstieg, um sich mit hoher Geschwindigkeit vorwärts zu katapultieren. Perfekt, um Gegner zu überraschen oder lange Strecken per Seilrutsche zurückzulegen.",
+      "movement_summary": "Diese Tricks sind nicht einfach, aber sie belohnen Übung. Die Kernbewegung bleibt intuitiv genug für Neulinge, doch die hohe Skill-Decke bietet Veteranen unendlich viel Raum zum Wachsen. Kurz gesagt, die Bewegung in Apex fühlt sich schnell und reaktionsschnell an, und die Karten sind speziell darauf ausgelegt, diese Geschwindigkeit zu demonstrieren.",
+      "legends_title": "Legenden versammeln sich: Charaktere, die den Kampf definieren",
+      "legends_intro": "Apex ist ein Hero-Shooter-Königskampf. Zu Beginn jedes Matches wählst du eine Legende – einen Charakter mit einer einzigartigen Identität und einem Satz von Fähigkeiten. Im Gegensatz zu anderen Königskämpfen mit generischen Loadouts haben die Legenden von Apex reiche Persönlichkeiten und besondere Kräfte. Zum Beispiel konnten die Spieler beim Start aus acht verschiedenen Legenden wählen, und heute gibt es Dutzende weitere, jede mit drei charakteristischen Fähigkeiten:",
+      "legends_passive": "Passive Fähigkeit: Ein immer aktiver Vorteil (oder eine nahezu sofortige Fähigkeit). Z.B. Bangalores 'Double Time' gewährt einen temporären Sprint-Boost, wenn sie unter Beschuss steht, während Bloodhounds 'Tracker' passiv die jüngsten Spuren von Feinden hervorhebt.",
+      "legends_tactical": "Taktische Fähigkeit: Eine Kampf-Fähigkeit mit kurzer Abklingzeit. Z.B. Wraiths 'Into the Void' lässt sie für die Neupositionierung phasen, Gibraltars 'Gun Shield' lässt beim Zielen einen Schutzschild erscheinen, und Lifelines 'D.O.C. Heal Drone' lässt sie Verbündete medizinisch heilen.",
+      "legends_ultimate": "Ultimative Fähigkeit: Eine mächtige, oft spielentscheidende Fähigkeit mit langer Abklingzeit. Z.B. Bangalore ruft einen Artillerieschlag aus der Luft; Bloodhounds 'Beast of the Hunt' verstärkt seine Sinne und Geschwindigkeit; Valkyrie schießt in den Himmel oder Octane setzt ein Sprungfeld ein, um das Team vorwärts zu schleudern.",
+      "legends_classes": "Wichtig ist, dass Apex diese Rollen in fünf Klassen formalisiert hat (eingeführt in Saison 16). Die Klassen – Assault, Recon, Support, Skirmisher und Controller – geben jeder Legende eine breite Rolle (Angriff, Informationsbeschaffung, Heilung, Mobilität oder Gebietskontrolle). Dies macht die Teamzusammenstellung strategisch. In einem 3-Spieler-Squad (keine doppelten Legenden erlaubt) kann eine gute Mischung der Rollen Angriff, Verteidigung und Nutzen abdecken. Mit klaren Rollen ist die Teamsynergie wichtig: Komplementäre Fähigkeiten ermöglichen Kombos (Rauch + Artillerie, Aufklärungsdaten + Flankierung, Heilung + Schild usw.). Das einzigartige Kit und die Hintergrundgeschichte jeder Legende fördern auch die Spieleridentität. Die rotierende Besetzung bedeutet, dass sich die Meta ständig verschiebt. Kurz gesagt, Legenden sind zentral für die Attraktivität von Apex – sie sind mehr als Skins, sie definieren, wie jedes Match gespielt wird.",
+      "innovations_title": "Jenseits der Kugel: Innovationen, die Apex auszeichnen",
+      "innovations_ping": "Intuitives Ping-System: Apex' Kommunikations-'Tagging' ist legendär. Mit einem einzigen Knopfdruck kannst du Feinde markieren, auf Beute zeigen oder ein Ziel angeben. Das Spiel fügt sogar kontextsensitive Ansagen hinzu. Dies ermöglicht Teams die Koordination ohne Sprachchat – perfekt für öffentliche Matches oder schüchterne Spieler.",
+      "innovations_respawn": "Zweite Chance durch Wiederbelebung: Im Gegensatz zu anderen Königskämpfen, wo der Tod endgültig ist, lässt Apex dein Team dich retten. Wenn eine Legende eliminiert wird, hinterlässt sie ein Respawn-Banner. Teamkollegen haben ein kurzes Zeitfenster, um es zu holen, zu einem Respawn-Beacon zu eilen und ihren Verbündeten wiederzubeleben. Dies erhöht den Einsatz bei Kampfentscheidungen und hält die Spiele spannend.",
+      "innovations_team": "Nur-Trios-Teamplay: Der Basismodus von Apex sind immer 3-Spieler-Teams (mit einer Option für Duos oder Solo 'ohne Auffüllen'). Du kannst keine doppelten Legenden in einem Squad haben. Dieses erzwungene Trios-Design bedeutet, dass die Rolle jedes Teammitglieds entscheidend ist. Fazit: Apex stellt Teamwork an erste Stelle.",
+      "arena_title": "Eine sich ständig entwickelnde Arena: Karten, Modi & Saisons",
+      "arena_intro": "Die Welt von Apex verändert sich ständig. Es gibt mehrere riesige Karten (Planeten) in der Rotation. Jede Karte hat ein einzigartiges Aussehen und einen einzigartigen Spielstil. Die Designer überarbeiten diese Karten ständig: alte Orte wurden zerstört oder überarbeitet, und sogar ganze Karten verschieben sich im Laufe der Zeit. Saisonale Updates treiben die Kartenentwicklung voran. Typischerweise beginnt alle ~3 Monate eine neue Saison mit großen Änderungen: einem Battle Pass, neuen Legenden, frischen Waffen oder Buffs und Kartenereignissen. Mehrere Spielmodi sorgen für Abwechslung über das Kern-Königskampf mit 60 Spielern hinaus:",
+      "arena_br": "Königskampf (Trios/Duos): Der klassische Apex-Modus – 20 Teams à 3 Spieler landen, sammeln Beute und kämpfen, um das letzte stehende Team zu sein. (Eine 'No-Fill'-Solo-Warteschlange ist ebenfalls verfügbar.)",
+      "arena_ranked": "Rangliste: Eine kompetitive Rangliste, bei der skillbasiertes Matchmaking und saisonale Splits es dir ermöglichen, Ränge und Belohnungen zu verdienen.",
+      "arena_arenas": "Arenen: Ein rundenbasierter 3v3-Deathmatch-Modus. Nachdem Arenen 2022 durch 'Mixtape' ersetzt wurden, kehrten sie kürzlich in Saison 25 als spezielle Wiedergabeliste zurück.",
+      "arena_mixtape": "Mixtape (Begrenzte Modi): Eine rotierende Auswahl von Modi (z.B. 9v9 Control, Team Deathmatch, Gun Run), die alle paar Stunden oder Wochen wechselt. Dies stellt sicher, dass Apex-Spieler Abwechslung (und lustige Pausen von der Haupt-Königskampf-Formel) erhalten.",
+      "arena_training": "Training & Bot Königskampf: Es gibt auch einen ständig geöffneten Schießstand zum Üben und Modi wie Bot Königskampf (Squads gegen KI) ermöglichen es Spielern, Fähigkeiten auf kleineren Karten ohne Druck zu verfeinern.",
+      "competitive_title": "Der Höhepunkt des Könnens: Kompetitives Spiel & Esports",
+      "competitive_intro": "Trotz seiner Zugänglichkeit hat Apex eine berühmt hohe Skill-Decke. Apex zu meistern bedeutet, sich in Zielgenauigkeit, Positionierung und Kartenkenntnis auszuzeichnen und blitzschnelle Entscheidungen über Kämpfe und Rotationen zu treffen. Bewegungstechniken belohnen Übung mit enormen Kampfvorteilen. Die Spiel-Meta beinhaltet eine komplexe Priorisierung: kluges Looten, nur bei guter Positionierung in Kämpfe eintreten und wissen, wann man sich zurückziehen oder angreifen sollte. Diese Tiefe hat sich in der Esports-Arena ausgezahlt. Die Apex Legends Global Series (ALGS) ist eine erstklassige 2-Millionen-Dollar-Serie, die jedes Jahr Weltmeister krönt. Die Pro-Szene fließt auch zurück ins Spiel: Profis, die fortgeschrittene Bewegungen fehlerfrei ausführen oder kreative Teamkombinationen einsetzen, werden zu einem Spektakel, das Gelegenheitsspieler anzieht. Esports-Hype motiviert Alltagsspieler, ihre Fähigkeiten zu verbessern, und ständige Meta-Verschiebungen halten die Wettbewerbslandschaft frisch.",
+      "why_return_title": "Warum wir wieder abspringen: Die anhaltende Anziehungskraft von Apex Legends",
+      "why_return_intro": "Warum kehren Spieler also immer wieder zurück, Match für Match? Apex trifft alle Spaß-Knöpfe. Die Steuerung fühlt sich großartig an, das Feedback ist sofortig, und jede Runde ist voller Spannung. Teamplay verstärkt diesen Spaß: Mit Freunden zu spielen (oder neue online zu finden) ist immer ein Vergnügen, da Zusammenarbeit und Kommunikation so tief in der DNA von Apex verwurzelt sind. Darüber hinaus sorgt der Heldenaspekt für langfristiges Engagement. Jede Legende hat ihre Geschichte und Persönlichkeit, sodass Spieler Bindungen aufbauen. Der ständige Strom neuer Inhalte sorgt dafür, dass sich das Spiel nie alt anfühlt. Jedes dieser Teile verstärkt die anderen. Der 'Pick-up-and-Play'-Kernloop ist anfängerfreundlich, während die hohe Skill-Decke Veteranen hungrig hält. Die Legenden und ihr sich entwickelndes Gleichgewicht fügen Strategieebenen hinzu. Und all das wird durch eine lebendige Community und Esports-Szene untermauert, die das Spiel feiern. Kurz gesagt, Apex Legends liefert an jeder Front – Spaß, Können, Teamwork, Vielfalt und Frische – und schafft einen sich selbst verstärkenden Kreislauf, der es auch in Zukunft fesselnd hält.",
+      "headache_title": "Das größte Problem: Unausgewogene Meta & Cheater",
+      "headache_intro": "Trotz all der Spannung und des Feinschliffs, die Apex Legends bietet, bleibt das größte anhaltende Problem die frustrierende Kombination aus einer unausgewogenen Meta und hartnäckigem Cheating. Spieler finden sich oft der Gnade übermächtiger Waffen-Loadouts oder Legenden-Kombinationen ausgeliefert, die die Meta dominieren und taktische Feuergefechte in einseitige Niederlagen verwandeln. Selbst mit häufigen Balance-Updates von Respawn laufen Matches zu oft darauf hinaus, wer den besten RNG hatte oder wer die 'schwitzigste' Skin-Kombination trägt. Für viele fühlt es sich an, als ob das Ergebnis, egal wie viel man übt, oft von Faktoren außerhalb der eigenen Kontrolle entschieden wird.\nDarüber hinaus plagen Cheater das Spiel weiterhin, besonders in Ranglistenspielen. Aimbots, No-Recoil-Skripte und nicht erkennbare Hardware wie Cronus- oder XIM-Geräte geben legitimen Spielern das Gefühl, mit kaputten Werkzeugen einen Kampf bergauf zu führen. Respawn hat große Schritte unternommen, über 6 Millionen Konten seit dem Start gesperrt, Kernel-Level-Anti-Cheat eingesetzt und in Cheat-intensiven Regionen härter durchgegriffen. Ihr Update vom Juni 2025 zeigte sogar einen Rückgang von 30 % in Ranglisten-Lobbys, die von Cheatern infiziert waren, dank Linux-Client-Sperren und intelligenterer Erkennung. Dennoch sind viele der Meinung, dass dies nicht ausreicht – Cheater erstellen einfach neue Konten, und Hardware-Exploits schlüpfen unentdeckt durch. All dies trifft dort, wo es wehtut: die Wettbewerbsintegrität. Können fühlt sich oft bedeutungslos an, wenn Gegner aus unmöglichen Winkeln gottgleiche Schüsse landen. Das Matchmaking wird zum Chaos, wobei Solo-Diamanten regelmäßig von vollen Predator-Squads zerquetscht werden. Und am Ende des Tages, wenn sich jedes dritte Match unfair anfühlt, fragen sich selbst eingefleischte Fans, ob es sich noch lohnt, weiter zu grinden.",
+      "headache_meta_title": "",
+      "headache_meta_text": "",
+      "headache_cheat_title": "",
+      "headache_cheat_text": "",
+      "headache_respawn_title": "",
+      "headache_respawn_text": "",
+      "headache_why_title": "",
+      "headache_why_text": "",
+      "headache_matchmaking_title": "",
+      "headache_matchmaking_text": "",
+      "toc_why": "Warum Apex eine Free-to-Play-Erfolgsgeschichte ist",
+      "toc_movement": "Die Bewegung meistern",
+      "toc_legends": "Legenden",
+      "toc_innovations": "Innovationen",
+      "toc_arena": "Karten, Modi & Saisons",
+      "toc_competitive": "Kompetitives Spiel & Esports",
+      "toc_why_return": "Warum wir wieder abspringen",
+      "toc_headache": "Unausgewogene Meta & Cheater"
     }
   },
   "development": {
@@ -70,53 +127,53 @@
       "toc": {
         "title": "Inhalt",
         "show": "Anzeigen",
-        "hide": "Verstecken"
+        "hide": "Ausblenden"
       },
       "sections": {
         "introduction": "Einleitung",
-        "completed": "Was bereits getan ist",
-        "inProgress": "Was derzeit in Arbeit ist",
-        "future": "Zukunftspläne",
+        "completed": "Was bereits erledigt ist",
+        "inProgress": "Was gerade in Arbeit ist",
+        "future": "Zukünftige Pläne",
         "contribute": "Wie Sie beitragen können",
         "faq": "Häufig gestellte Fragen"
       },
       "introduction": {
-        "text1": "Willkommen zur Gameexa Entwicklungs-Roadmap! Wir sind bestrebt, Gameexa zur ultimativen Gaming-Plattform für Spieler weltweit zu machen.",
-        "text2": "Diese Seite bietet transparente Informationen über unseren Fortschritt, aktuelle Arbeit und zukünftige Pläne. Ihr Feedback und Ihre Vorschläge sind für uns von unschätzbarem Wert.",
-        "highlight": "Wir streben danach, Gameexa zur besten Plattform für Gamer zu machen und arbeiten kontinuierlich an ihrer Verbesserung. Hier finden Sie Informationen über unsere Erfolge, aktuellen Aufgaben und was wir für Sie in der Zukunft vorbereiten."
+        "text1": "Willkommen zur Gameexa-Entwicklungs-Roadmap! Wir sind bestrebt, Gameexa zur ultimativen Gaming-Plattform für Spieler weltweit zu machen.",
+        "text2": "Diese Seite bietet transparente Informationen über unseren Fortschritt, unsere aktuelle Arbeit und unsere zukünftigen Pläne. Ihr Feedback und Ihre Vorschläge sind für uns von unschätzbarem Wert.",
+        "highlight": "Wir streben danach, Gameexa zur besten Plattform für Gamer zu machen und arbeiten kontinuierlich an ihrer Verbesserung. Hier finden Sie Informationen zu unseren Erfolgen, aktuellen Aufgaben und dem, was wir in Zukunft für Sie vorbereiten."
       },
       "completed": {
         "features": "Implementierte Funktionen",
-        "feature1": "Benutzerregistrierung und Profilsystem hinzugefügt",
+        "feature1": "Benutzerregistrierungs- und Profilsystem hinzugefügt",
         "feature2": "Spielsuche nach Genres implementiert",
-        "feature3": "Responsive Design für alle Geräte erstellt",
+        "feature3": "Responsives Design für alle Geräte erstellt",
         "fixes": "Fehlerbehebungen",
-        "fix1": "Falsche Spielerstatistik-Anzeige behoben",
-        "fix2": "Anwendungsabsturz bei bestimmten Aktionen behoben",
-        "fix3": "Seitenladeleistung verbessert",
+        "fix1": "Fehlerhafte Anzeige der Spielerstatistiken behoben",
+        "fix2": "Abstürze der Anwendung bei bestimmten Aktionen behoben",
+        "fix3": "Ladeleistung der Seiten verbessert",
         "projects": "Abgeschlossene Projekte",
         "project1": {
-          "title": "Hauptseite Redesign",
-          "desc": "Komplette Überarbeitung der Hauptseite mit kosmischem Theme und verbessertem Benutzererlebnis"
+          "title": "Redesign der Hauptseite",
+          "desc": "Komplette Überarbeitung der Hauptseite mit kosmischem Thema und verbesserter Benutzererfahrung"
         },
         "project2": {
-          "title": "Discord Integration",
-          "desc": "Nahtlose Integration mit Discord-Server für Community-Aufbau"
+          "title": "Discord-Integration",
+          "desc": "Nahtlose Integration mit dem Discord-Server zum Aufbau einer Community"
         }
       },
       "inProgress": {
         "tasks": "Aktuelle Aufgaben und ihr Status",
         "task1": {
-          "title": "In-Game Achievement System",
-          "desc": "Entwicklung eines umfassenden Achievement-Systems zur Verfolgung des Spielerfortschritts"
+          "title": "In-Game-Erfolgssystem",
+          "desc": "Entwicklung eines umfassenden Erfolgssystems zur Verfolgung des Spielerfortschritts"
         },
         "task2": {
-          "title": "Seitenladeoptimierung",
-          "desc": "Verbesserung der Website-Performance und Ladegeschwindigkeiten"
+          "title": "Optimierung des Seitenladens",
+          "desc": "Verbesserung der Website-Leistung und Ladezeiten"
         },
         "task3": {
-          "title": "Neue Analytics-Integration",
-          "desc": "Integration fortschrittlicher Analytics-Tools für bessere Benutzererfahrung"
+          "title": "Neue Analyse-Integration",
+          "desc": "Integration fortschrittlicher Analysetools für eine bessere Benutzererfahrung"
         },
         "status": {
           "inDevelopment": "In Entwicklung",
@@ -124,44 +181,44 @@
           "started": "Gestartet"
         },
         "priorities": "Prioritätsbereiche",
-        "prioritiesText": "Derzeit ist unsere Hauptpriorität die Verbesserung der Website-Performance und die Erweiterung sozialer Interaktionsfunktionen."
+        "prioritiesText": "Derzeit liegt unsere Hauptpriorität auf der Verbesserung der Website-Leistung und der Erweiterung der Funktionen für soziale Interaktion."
       },
       "future": {
         "newFeatures": "Neue Funktionen",
         "feature1": "Personalisierte Spielempfehlungen",
-        "feature2": "Clan/Team-System",
+        "feature2": "Clan-/Team-System",
         "feature3": "Streamer-Bereich",
         "improvements": "Verbesserungen bestehender Systeme",
-        "improvement1": "Benachrichtigungssystem-Redesign",
-        "improvement2": "Erweiterte Benutzerprofil-Funktionen",
-        "improvement3": "Fortgeschrittene Suchalgorithmen",
+        "improvement1": "Redesign des Benachrichtigungssystems",
+        "improvement2": "Erweiterte Benutzerprofilfunktionen",
+        "improvement3": "Fortschrittliche Suchalgorithmen",
         "newGames": "Neue Spiele/Module",
         "game1": "Unterstützung für neue beliebte Spiele",
-        "game2": "Integration mit Spiel-Launchern",
-        "game3": "Mobile App-Entwicklung",
-        "optimization": "Optimierung und Performance",
-        "optimization1": "Weitere Server-Infrastruktur-Optimierung",
+        "game2": "Integration mit Game-Launchern",
+        "game3": "Entwicklung einer mobilen App",
+        "optimization": "Optimierung und Leistung",
+        "optimization1": "Weitere Optimierung der Serverinfrastruktur",
         "optimization2": "Verbesserte Suchalgorithmen"
       },
       "contribute": {
         "feedback": "Feedback/Vorschlag hinterlassen",
-        "feedbackText": "Ihre Ideen helfen uns zu verbessern! Teilen Sie Ihre Gedanken und Vorschläge für neue Funktionen.",
+        "feedbackText": "Deine Ideen helfen uns, uns zu verbessern! Teile uns deine Gedanken und Vorschläge für neue Funktionen mit.",
         "feedbackBtn": "Feedback-Formular",
         "discordBtn": "Auf Discord diskutieren",
-        "bugReport": "Bug melden",
-        "bugReportText": "Einen Bug gefunden? Helfen Sie uns, ihn zu beheben, indem Sie das Problem mit detaillierten Informationen melden.",
-        "bugReportBtn": "Bug melden",
-        "support": "Projekt unterstützen",
-        "supportText": "Gefällt Ihnen Gameexa? Unterstützen Sie unsere Entwicklung und helfen Sie uns zu wachsen!",
+        "bugReport": "Einen Fehler melden",
+        "bugReportText": "Einen Fehler gefunden? Hilf uns, ihn zu beheben, indem du das Problem mit detaillierten Informationen meldest.",
+        "bugReportBtn": "Fehler melden",
+        "support": "Das Projekt unterstützen",
+        "supportText": "Liebst du Gameexa? Unterstütze unsere Entwicklung und hilf uns zu wachsen!",
         "supportBtn": "Gameexa unterstützen"
       },
       "faq": {
         "q1": "Wann wird Funktion X hinzugefügt?",
-        "a1": "Wir arbeiten daran und werden den Fortschritt im Abschnitt 'Was derzeit in Arbeit ist' aktualisieren.",
+        "a1": "Wir arbeiten daran und werden den Fortschritt im Abschnitt 'Was gerade in Arbeit ist' aktualisieren.",
         "q2": "Kann ich eine Idee vorschlagen?",
-        "a2": "Ja! Verwenden Sie das Feedback-Formular oben oder diskutieren Sie auf unserem Discord-Server.",
+        "a2": "Ja! Nutze das obige Feedback-Formular oder diskutiere auf unserem Discord-Server.",
         "q3": "Wie oft aktualisieren Sie die Roadmap?",
-        "a3": "Wir aktualisieren diese Seite regelmäßig, wenn wir Aufgaben abschließen und neue beginnen."
+        "a3": "Wir aktualisieren diese Seite regelmäßig, sobald wir Aufgaben abgeschlossen und neue begonnen haben."
       }
     }
   }
